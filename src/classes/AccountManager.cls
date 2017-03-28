@@ -11,7 +11,7 @@ global class AccountManager {
         RestRequest request = RestContext.request;
         SYSTEM.DEBUG('##############'+request);
         String AccId = request.requestURI.substringBetween('/Accounts/' , '/contacts');
-        //SYSTEM.DEBUG('@@@@@@@@@@@@@@@@'+AccId);
+        SYSTEM.DEBUG('@@@@@@@@@@@@@@@@'+AccId);
         Account result =  [SELECT Id, Name, (Select Id, Name from Contacts) FROM Account WHERE Id = :AccId];
         system.debug('$$$$$$$$$$$$$$$$$'+result);
         return result;
