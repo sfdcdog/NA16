@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>19:00:00.000Z</fridayEndTime>
+        <fridayStartTime>10:00:00.000Z</fridayStartTime>
+        <mondayEndTime>19:00:00.000Z</mondayEndTime>
+        <mondayStartTime>10:00:00.000Z</mondayStartTime>
+        <name>Default</name>
+        <saturdayEndTime>19:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>10:00:00.000Z</saturdayStartTime>
+        <thursdayEndTime>19:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>10:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Los_Angeles</timeZoneId>
+        <tuesdayEndTime>19:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>10:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>19:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>10:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <activityDate>2016-02-25</activityDate>
+        <businessHours>Default</businessHours>
+        <endTime>21:00:00.000Z</endTime>
+        <isRecurring>false</isRecurring>
+        <name>My Day</name>
+        <startTime>11:00:00.000Z</startTime>
+    </holidays>
+</BusinessHoursSettings>

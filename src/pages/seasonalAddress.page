@@ -1,0 +1,106 @@
+<apex:page controller="seasonalAddressPageController" sidebar="false" tabStyle="Household__c">
+    <script type="text/javascript">
+        function selectAllCheckboxes(obj, receivedInputID) {
+            console.log('Object: '+obj);
+            console.log('input Id: '+receivedInputID);
+            var inputCheckBox = document.getElementsByTagName("input");
+            console.log('CheckBox Length:   '+inputCheckBox[0].id);
+            for (var i = 0; i < inputCheckBox.length; i++) {
+                //console.log('Loop count: '+i);
+                console.log('Obj value: '+JSON.stringify(obj));
+                console.log('index of value: '+inputCheckBox[i].id.indexOf(receivedInputID));
+                if (inputCheckBox[i].id.indexOf(receivedInputID) != -1) {
+                    inputCheckBox[i].checked = obj.checked;
+                }
+            }
+        }
+
+        function noenter(ev) {
+            if (window.event && window.event.keyCode == 13 || ev.which == 13) {
+                doSearchAccounts();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+
+    <apex:form >
+
+        <apex:outputPanel id="totalPanel">
+            <apex:actionFunction name="doSearchAccounts" action="{!searchHouseHolds}" rerender="pg1" />
+            <apex:pageBlock id="pg1" rendered="{!showHouseHoldFlag}">
+
+                <apex:pageBlockButtons >
+                    <apex:commandButton value="Go to Contacts" action="{!contactsPage}" />
+                </apex:pageBlockButtons>
+
+                <apex:outputLabel style="font-weight:bold">Search HouseHolds:</apex:outputLabel>&nbsp;&nbsp;
+                <apex:inputText value="{!searchText}" onkeypress="return noenter(event);" />
+                <apex:commandButton value="Search" action="{!searchHouseHolds}" /><br/>
+
+                <apex:pageblockSection title="Search results" collapsible="false" columns="2">
+                    <apex:pageBlockTable value="{!paginated}" var="hHoldWrap" id="table" title="All HouseHolds">
+                        <apex:column >
+                            <apex:facet name="header">
+                                <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')" />
+                            </apex:facet>
+                            <apex:inputCheckbox value="{!hHoldWrap.selected}" id="inputId">
+                            </apex:inputCheckbox>
+                        </apex:column>
+                        <apex:column headerValue="Household Name" value="{!hHoldWrap.hHold.Name}">
+
+                        </apex:column>
+                    </apex:pageBlockTable><br/>
+
+                    <apex:pageBlockSectionItem >
+
+                    </apex:pageBlockSectionItem>
+                    <apex:panelGrid columns="2">
+                        <apex:selectList value="{!size}" multiselect="false" size="1">
+                            <apex:selectOptions value="{!hHoldPaginationSizeOptions}" />
+                        </apex:selectList>
+
+                        <apex:outputText >
+                            {!(standardsetcon.pageNumber * size)+1-size} - {!IF(standardsetcon.pageNumber * size!=null && standardsetcon.pageNumber * size > hHoldRecords, hHoldRecords, (standardsetcon.pageNumber * size))} of {!hHoldRecords}
+                        </apex:outputText>
+                    </apex:panelGrid>
+                </apex:pageblockSection>
+            </apex:pageBlock>
+
+            <apex:actionFunction name="doSearchProducts" action="{!searchContacts}" rerender="pg3" />
+            <apex:pageBlock id="pg3" rendered="{!showContactFlag}">
+                <apex:pageBlockButtons >
+                    <apex:commandButton value="Submit Selections" action="{!createSeasonalAddresses}" />
+                </apex:pageBlockButtons>
+                <apex:commandButton value="Get Contacts" action="{!searchContacts}" reRender="pg3" />
+                <apex:pageBlockSection title="Contacts List">
+                    <apex:pageBlockTable value="{!Contactspaginated}" var="conWrap" title="All Contacts">
+                        <apex:column >
+                            <apex:facet name="header">
+                                <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')" />
+                            </apex:facet>
+                            <apex:inputcheckbox value="{!conWrap.selected}" id="inputId2">
+                            </apex:inputCheckbox>
+                        </apex:column>
+                        <apex:column headerValue="Contact Name" value="{!conWrap.con.Name}">
+
+                        </apex:column>
+
+                    </apex:pageBlockTable><br/>
+
+                    <apex:panelGrid columns="8">
+                        <apex:selectList value="{!size}" multiselect="false" size="1">
+                            <apex:selectOptions value="{!conPaginationSizeOptions}" />
+                        </apex:selectList>
+
+                        <apex:outputText >
+                            {!(contactStandardSetCon.pageNumber * size)+1-size} - {!IF(contactStandardSetCon.pageNumber * size!=null && contactStandardSetCon.pageNumber * size > conRecords, conRecords, (contactStandardSetCon.pageNumber * size))} of {!conRecords}
+                        </apex:outputText>
+                    </apex:panelGrid>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Force.com for Amazon Web Services --></label>
+        <name>AWS_Toolkit</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Example_App --></label>
+        <name>Example_App</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Garage --></label>
+        <name>Garage</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Lightning --></label>
+        <name>Lightning</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Recruting --></label>
+        <name>Recruting</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Warehouse --></label>
+        <name>Warehouse</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Holds AWS Key --></label>
+        <name>AWS_Key</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Holds AWS Secret --></label>
+        <name>AWS_Secret</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Internal Profile Name --></label>
+        <name>Internal_Profile_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Profile Name --></label>
+        <name>Profile_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This holds the page sizes for Household page --></label>
+        <name>pagesizes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AM PM Markers --></label>
+        <name>skuid__AM_PM_Markers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action --></label>
+        <name>skuid__Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Actions --></label>
+        <name>skuid__Actions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add a New --></label>
+        <name>skuid__Add_A_New</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add All Visible Objects --></label>
+        <name>skuid__Add_All_Visible_Objects</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add Drilldown --></label>
+        <name>skuid__Add_Drilldown</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add New --></label>
+        <name>skuid__Add_New</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add This --></label>
+        <name>skuid__Add_This</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- After This --></label>
+        <name>skuid__After_This</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- All Time --></label>
+        <name>skuid__All_Time</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- All_X --></label>
+        <name>skuid__All_X</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- All records exported to CSV --></label>
+        <name>skuid__All_records_exported_to_CSV</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Allow external emails --></label>
+        <name>skuid__Allow_external_emails</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Any_X --></label>
+        <name>skuid__Any_X</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Apply --></label>
+        <name>skuid__Apply</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Applying Filter --></label>
+        <name>skuid__Applying_Filter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Assign using active assignment rule --></label>
+        <name>skuid__Assign_using_active_assignment_rule</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Batches Processed --></label>
+        <name>skuid__Batches_Processed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Before This --></label>
+        <name>skuid__Before_This</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Boolean - Off --></label>
+        <name>skuid__Boolean_Off</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Boolean - On --></label>
+        <name>skuid__Boolean_On</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Building Page --></label>
+        <name>skuid__Building_Page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>skuid__Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot Find Object Question --></label>
+        <name>skuid__Cannot_Find_Object_Question</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Check All --></label>
+        <name>skuid__Check_All</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Click Here to Return to Where You Started --></label>
+        <name>skuid__Click_Here_to_Return_to_Where_You_Started</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Click To Go To {0} Tab --></label>
+        <name>skuid__Click_To_Go_To_Object_Tab</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clone --></label>
+        <name>skuid__Clone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Components --></label>
+        <name>skuid__Components</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Confirm Delete --></label>
+        <name>skuid__Confirm_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Created By --></label>
+        <name>skuid__Created_By</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom Action --></label>
+        <name>skuid__Custom_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Data Source --></label>
+        <name>skuid__DataSource</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Date Completed --></label>
+        <name>skuid__Date_Completed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Date Submitted --></label>
+        <name>skuid__Date_Submitted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Datepicker_CloseText --></label>
+        <name>skuid__Datepicker_CloseText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Datepicker_CurrentText --></label>
+        <name>skuid__Datepicker_CurrentText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Datepicker_NextText --></label>
+        <name>skuid__Datepicker_NextText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Datepicker_PrevText --></label>
+        <name>skuid__Datepicker_PrevText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Datepicker_WeekHeader --></label>
+        <name>skuid__Datepicker_WeekHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Day Names Long --></label>
+        <name>skuid__Day_Names_Long</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Day Names Min --></label>
+        <name>skuid__Day_Names_Min</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Day Names Short --></label>
+        <name>skuid__Day_Names_Short</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Day Scheduling View --></label>
+        <name>skuid__Day_Scheduling_View</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete --></label>
+        <name>skuid__Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Deleting --></label>
+        <name>skuid__Deleting</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Done --></label>
+        <name>skuid__Done</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Download Sample File --></label>
+        <name>skuid__Download_Sample_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_All_Columns_Must_Be_Mapped_Before_Import --></label>
+        <name>skuid__ERROR_All_Columns_Must_Be_Mapped_Before_Import</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_At_Least_One_Import_Job_Required --></label>
+        <name>skuid__ERROR_At_Least_One_Import_Job_Required</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Content_Type_Not_Supported --></label>
+        <name>skuid__ERROR_Content_Type_Not_Supported</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Could_Not_Find_Skuid_Page --></label>
+        <name>skuid__ERROR_Could_Not_Find_Skuid_Page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Could_Not_Process_Page_Include_Merge --></label>
+        <name>skuid__ERROR_Could_Not_Process_Page_Include_Merge</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Could_Not_Retrieve_File_From_URL --></label>
+        <name>skuid__ERROR_Could_Not_Retrieve_File_From_URL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_DML_Operation_On_Model_X_Failed_Due_To_Error --></label>
+        <name>skuid__ERROR_DML_Operation_On_Model_X_Failed_Due_To_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR Duplicate Value for Unique Field --></label>
+        <name>skuid__ERROR_Duplicate_Value_for_Unique_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Empty_Column_Header_Found --></label>
+        <name>skuid__ERROR_Empty_Column_Header_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Empty_File --></label>
+        <name>skuid__ERROR_Empty_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_File_Contains_Invalid_Characters --></label>
+        <name>skuid__ERROR_File_Contains_Invalid_Characters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_File_Has_No_Columns --></label>
+        <name>skuid__ERROR_File_Has_No_Columns</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_File_Only_Has_Header_Row --></label>
+        <name>skuid__ERROR_File_Only_Has_Header_Row</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Import_Process_Required --></label>
+        <name>skuid__ERROR_Import_Process_Required</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Insufficient_Privileges_To_Create_Field --></label>
+        <name>skuid__ERROR_Insufficient_Privileges_To_Create_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Insufficient_Privileges_To_Delete_Record --></label>
+        <name>skuid__ERROR_Insufficient_Privileges_To_Delete_Record</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Insufficient_Privileges_To_Insert_Record --></label>
+        <name>skuid__ERROR_Insufficient_Privileges_To_Insert_Record</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Insufficient_Privileges_To_Update_Field --></label>
+        <name>skuid__ERROR_Insufficient_Privileges_To_Update_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Insufficient_Privileges_To_Update_Record --></label>
+        <name>skuid__ERROR_Insufficient_Privileges_To_Update_Record</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Invalid_Batch_Job_Id --></label>
+        <name>skuid__ERROR_Invalid_Batch_Job_Id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Invalid_Field_Mappings_Still_Exist --></label>
+        <name>skuid__ERROR_Invalid_Field_Mappings_Still_Exist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Invalid_SObjectType_For_Model --></label>
+        <name>skuid__ERROR_Invalid_SObjectType_For_Model</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Invalid_SObject_No_Metadata_Retrieved --></label>
+        <name>skuid__ERROR_Invalid_SObject_No_Metadata_Retrieved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Invalid_SObject_Type --></label>
+        <name>skuid__ERROR_Invalid_SObject_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Missing Field on Field from Another Model Condition --></label>
+        <name>skuid__ERROR_Missing_Field_on_Field_from_Another_Model_Condition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_No_Fields_Selected_For_Model_Query --></label>
+        <name>skuid__ERROR_No_Fields_Selected_For_Model_Query</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_No_Permission_To_Author_Arbitrary_JavaScript --></label>
+        <name>skuid__ERROR_No_Permission_To_Author_Arbitrary_JavaScript</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Page Name Conflict --></label>
+        <name>skuid__ERROR_Page_Name_Conflict</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Page Version Conflict --></label>
+        <name>skuid__ERROR_Page_Version_Conflict</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Page_Name_or_Id_Required --></label>
+        <name>skuid__ERROR_Page_or_Tab_Required</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Page_with_Id_Could_Not_Be_Retrieved --></label>
+        <name>skuid__ERROR_Page_with_Id_Could_Not_Be_Retrieved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Protected_Module --></label>
+        <name>skuid__ERROR_Protected_Module</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Unable_To_Redirect_To_Standard_Pages --></label>
+        <name>skuid__ERROR_Unable_To_Redirect_To_Standard_Pages</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_Valid_DataTable_Required --></label>
+        <name>skuid__ERROR_Valid_DataTable_Required</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit Page --></label>
+        <name>skuid__Edit_Page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit Row --></label>
+        <name>skuid__Edit_Row</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit Rows Action --></label>
+        <name>skuid__Edit_Rows_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- End Date --></label>
+        <name>skuid__End_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Enter keywords --></label>
+        <name>skuid__Enter_keywords</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error --></label>
+        <name>skuid__Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error Performing Requested Search --></label>
+        <name>skuid__Error_Performing_Requested_Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error_While_Loading_Visualforce_Page_Include --></label>
+        <name>skuid__Error_While_Loading_Visualforce_Page_Include</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Example_Of_What_File_Should_Look_Like --></label>
+        <name>skuid__Example_Of_What_File_Should_Look_Like</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export Data --></label>
+        <name>skuid__Export_Data</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Field --></label>
+        <name>skuid__Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Field_X_Does_Not_Exist_On_Object --></label>
+        <name>skuid__Field_X_Does_Not_Exist_On_Object</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Fields --></label>
+        <name>skuid__Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- File Column Header --></label>
+        <name>skuid__File_Column_Header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filter --></label>
+        <name>skuid__Filter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filter could not be applied --></label>
+        <name>skuid__Filter_could_not_be_applied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- First --></label>
+        <name>skuid__First</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Flag For Deletion --></label>
+        <name>skuid__Flag_For_Deletion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Flag for Delete Action --></label>
+        <name>skuid__Flag_for_Delete_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Home --></label>
+        <name>skuid__Home</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- How to Format Your File --></label>
+        <name>skuid__How_to_Format_Your_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import --></label>
+        <name>skuid__Import</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ImportWizardStep1ReturnWarning --></label>
+        <name>skuid__ImportWizardStep1ReturnWarning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ImportWizard_OnceFinishedWithEditsSelectSaveAs --></label>
+        <name>skuid__ImportWizard_OnceFinishedWithEditsSelectSaveAs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import Complete --></label>
+        <name>skuid__Import_Complete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import Email On The Way --></label>
+        <name>skuid__Import_Email_On_The_Way</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import In Progress --></label>
+        <name>skuid__Import_In_Progress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import Processing In Background --></label>
+        <name>skuid__Import_Processing_In_Background</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid Field On Object Requested by Model --></label>
+        <name>skuid__Invalid_Field_On_Object_Requested_by_Model</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid Field on Object Requested by Model Condition --></label>
+        <name>skuid__Invalid_Field_on_Object_Requested_by_Model_Condition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid Number Format --></label>
+        <name>skuid__Invalid_Number_Format</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Job Details --></label>
+        <name>skuid__Job_Details</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last --></label>
+        <name>skuid__Last</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last Modified By --></label>
+        <name>skuid__Last_Modified_By</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- List View --></label>
+        <name>skuid__List_View</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Load More --></label>
+        <name>skuid__Load_More</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Loading --></label>
+        <name>skuid__Loading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Loading Calendar Events --></label>
+        <name>skuid__Loading_Calendar_Events</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Map Column Headers To Fields --></label>
+        <name>skuid__Map_Column_Headers_To_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mapping Status --></label>
+        <name>skuid__Mapping_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mass Update Selected Rows --></label>
+        <name>skuid__Mass_Update_Selected_Rows</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Model_Id_Not_Provided --></label>
+        <name>skuid__Model_Id_Not_Provided</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Models --></label>
+        <name>skuid__Models</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Module --></label>
+        <name>skuid__Module</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Month Names Long --></label>
+        <name>skuid__Month_Names_Long</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Month Names Short --></label>
+        <name>skuid__Month_Names_Short</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Month View --></label>
+        <name>skuid__Month_View</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- My Credentials --></label>
+        <name>skuid__MyCredentials</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New Event --></label>
+        <name>skuid__New_Event</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next --></label>
+        <name>skuid__Next</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No --></label>
+        <name>skuid__No</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No but I would like to Delete --></label>
+        <name>skuid__No_But_I_Would_Like_To_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No Dont Delete Anything --></label>
+        <name>skuid__No_Dont_Delete_Anything</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No Module --></label>
+        <name>skuid__No_Module</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No Objects to Display --></label>
+        <name>skuid__No_Objects_to_Display</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No Page Name Provided For Visualforce Page Include --></label>
+        <name>skuid__No_Page_Name_Provided_For_Visualforce_Page_Include</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- None_Option_Text --></label>
+        <name>skuid__None_Option_Text</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- None Selected --></label>
+        <name>skuid__None_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Number Selected --></label>
+        <name>skuid__Number_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Number of Items Successfully Created --></label>
+        <name>skuid__Number_of_Items_Successfully_Created</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Number of Items That Failed --></label>
+        <name>skuid__Number_of_Items_That_Failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Object_X_Does_Not_Exist --></label>
+        <name>skuid__Object_X_Does_Not_Exist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Objects Per Page --></label>
+        <name>skuid__Objects_Per_Page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Organization Default --></label>
+        <name>skuid__Organization_Default</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Owner --></label>
+        <name>skuid__Owner</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Page_Error_Header --></label>
+        <name>skuid__Page_Error_Header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Page Regions --></label>
+        <name>skuid__Page_Regions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Pagination Limit Reached --></label>
+        <name>skuid__Pagination_Limit_Reached</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Password --></label>
+        <name>skuid__Password</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Picture View --></label>
+        <name>skuid__Picture_View</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please_Check_Requested_Model_Merge_Field --></label>
+        <name>skuid__Please_Check_Requested_Model_Merge_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please Check Requested URL Parameter --></label>
+        <name>skuid__Please_Check_Requested_URL_Parameter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Preview --></label>
+        <name>skuid__Preview</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Previous --></label>
+        <name>skuid__Previous</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Profile Object Label --></label>
+        <name>skuid__Profile_Object_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Properties --></label>
+        <name>skuid__Properties</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Records Successfully Created --></label>
+        <name>skuid__Records_Successfully_Created</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Records_Successfully_Created_Or_Updated --></label>
+        <name>skuid__Records_Successfully_Created_Or_Updated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Records That Failed --></label>
+        <name>skuid__Records_That_Failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove --></label>
+        <name>skuid__Remove</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove this Column --></label>
+        <name>skuid__Remove_this_Column</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Required Fields have no Value --></label>
+        <name>skuid__Required_Fields_have_no_Value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Resources --></label>
+        <name>skuid__Resources</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Result --></label>
+        <name>skuid__Result</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Results --></label>
+        <name>skuid__Results</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Retrieving data for export --></label>
+        <name>skuid__Retrieving_data_for_export</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Retrieving records a to b --></label>
+        <name>skuid__Retrieving_records_a_to_b</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Row Selected --></label>
+        <name>skuid__Row_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Rows Selected --></label>
+        <name>skuid__Rows_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>skuid__Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Saved --></label>
+        <name>skuid__Saved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Saving --></label>
+        <name>skuid__Saving</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search --></label>
+        <name>skuid__Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Searching --></label>
+        <name>skuid__Searching</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select --></label>
+        <name>skuid__Select</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select A File --></label>
+        <name>skuid__Select_A_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select Event Type to Create --></label>
+        <name>skuid__Select_Event_Type_to_Create</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select Option None --></label>
+        <name>skuid__Select_Option_None</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Send notification email --></label>
+        <name>skuid__Send_notification_email</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Send notification email to --></label>
+        <name>skuid__Send_notification_email_to</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Share --></label>
+        <name>skuid__Share</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Show --></label>
+        <name>skuid__Show</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Showing Rows --></label>
+        <name>skuid__Showing_Rows</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Skuid Batch Processing --></label>
+        <name>skuid__Skoodat_Batch_Processing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Skuid Page Problems --></label>
+        <name>skuid__Skuid_Page_Problems</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Specific Record Type --></label>
+        <name>skuid__Specific_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Start Date --></label>
+        <name>skuid__Start_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status of Import Operation --></label>
+        <name>skuid__Status_of_Import_Operation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Submitted By --></label>
+        <name>skuid__Submitted_By</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- To_See_Imported_Records --></label>
+        <name>skuid__To_See_Imported_Records</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Toggle Edit Mode on Selected Rows --></label>
+        <name>skuid__Toggle_Edit_Mode_on_Selected_Rows</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Flag Selected Rows for Deletion --></label>
+        <name>skuid__Toggle_Selected_Rows_for_Deletion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Total Items Requested For Import --></label>
+        <name>skuid__Total_Items_Requested_For_Import</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Uncheck All --></label>
+        <name>skuid__Uncheck_All</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unsaved Changes Warning --></label>
+        <name>skuid__Unsaved_Changes_Warning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unsupported_Page_Include_Merge_Type --></label>
+        <name>skuid__Unsupported_Page_Include_Merge_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Upload --></label>
+        <name>skuid__Upload</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Upload Successful --></label>
+        <name>skuid__Upload_Successful</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Uploading --></label>
+        <name>skuid__Uploading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Username --></label>
+        <name>skuid__Username</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Validate Mappings --></label>
+        <name>skuid__Validate_Mappings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Validate Mappings Tooltip --></label>
+        <name>skuid__Validate_Mappings_Tooltip</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View --></label>
+        <name>skuid__View</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View More --></label>
+        <name>skuid__View_More</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Week View --></label>
+        <name>skuid__Week_View</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Welcome Email HTML Body --></label>
+        <name>skuid__Welcome_Email_HTML_Body</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Welcome Email HTML Body Part 2 --></label>
+        <name>skuid__Welcome_Email_HTML_Body_Part_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Welcome Email Plain Text Body --></label>
+        <name>skuid__Welcome_Email_Plain_Text_Body</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Welcome to Skuid --></label>
+        <name>skuid__Welcome_To_Skuid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Wizard_Step_Title --></label>
+        <name>skuid__Wizard_Step_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Yes --></label>
+        <name>skuid__Yes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Applying sort order change --></label>
+        <name>skuid__applying_sort_order_change</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No component renderer --></label>
+        <name>skuid__pb_No_component_renderer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No properties renderer --></label>
+        <name>skuid__pb_No_properties_renderer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Summary Function (AVG) --></label>
+        <name>skuid__summary_avg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Summary Function (MAX) --></label>
+        <name>skuid__summary_max</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Summary Function (MED) --></label>
+        <name>skuid__summary_med</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Summary Function (MIN) --></label>
+        <name>skuid__summary_min</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Summary Function (SUM) --></label>
+        <name>skuid__summary_sum</name>
+    </customLabels>
+    <customLabels>
+        <label>設定取得</label>
+        <name>z_DumpBtn</name>
+    </customLabels>
+    <customLabels>
+        <label>エラーが発生いたしました。</label>
+        <name>z_FAILURE</name>
+    </customLabels>
+    <customLabels>
+        <label>設定情報を取得するにはディスク容量が必要となります。特にDeveloper Editionをお使いの方はすべての設定情報を取得することができませんので設定タブからターゲットを絞ってください。デフォルトの組織オブジェクト情報を取得するのに4.5MB必要となります</label>
+        <name>z_Message1</name>
+    </customLabels>
+    <customLabels>
+        <label>このアプリケーションはオブジェクトの設定情報を上書きいたします。前回取得したレコードを保存したい場合にはレポート機能でcsvあるいはxslファイルとして出力してください。また分析スナップショット機能を使い別オブジェクトに出力することも可能です</label>
+        <name>z_Message2</name>
+    </customLabels>
+    <customLabels>
+        <label>設定取得が終わるまでこのページを閉じず約10分程度お待ちください。またボタンの2度押しは行わないでください。</label>
+        <name>z_Message3</name>
+    </customLabels>
+    <customLabels>
+        <label>オブジェクト設定取得画面</label>
+        <name>z_MetadataDump</name>
+    </customLabels>
+    <customLabels>
+        <label>進行状況</label>
+        <name>z_Progress</name>
+    </customLabels>
+    <customLabels>
+        <label>オブジェクトの設定情報が作成されました。
+SObjectタブをクリックしてご確認ください。</label>
+        <name>z_SUCCESS</name>
+    </customLabels>
+    <customLabels>
+        <label>設定タブからターゲットとなるオブジェクトを選んでください。</label>
+        <name>z_Warning</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- AWS Explorer --></label>
+        <name>AWS_Explorer</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- About Force.com for Amazon Web Services --></label>
+        <name>About_Force_com_Toolkit_for_AWS</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Case --></label>
+        <name>Cases</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Data --></label>
+        <name>Data</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- EC2 Console --></label>
+        <name>EC2_Console</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- EC2 Images --></label>
+        <name>EC2_Images</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Example_Lightning App 1 --></label>
+        <name>Example_Lightning_App_1</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Example LtngNestedComponents --></label>
+        <name>Example_LtngNestedComponents</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Getting Started --></label>
+        <name>Getting_Started</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Graphics Pack Overview --></label>
+        <name>Graphics_Pack_Overview</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Lightning Rich Text --></label>
+        <name>Lightning_Rich_Text</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- My Expenses --></label>
+        <name>My_Expenses</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- S3 Samples --></label>
+        <name>S3_Samples</name>
+    </customTabs>
+    <customTabs>
+        <label>スキーマ取得</label>
+        <name>SnapShot</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- check contacts --></label>
+        <name>check_contacts</name>
+    </customTabs>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Detailed Account --></label>
+        <name>New_Detailed_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Position --></label>
+        <name>New_Standard_Position</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Accounts with Entitlements with Contacts --></description>
+        <label><!-- Accounts with Entitlements with Contacts --></label>
+        <name>Accounts_with_Entitlements_with_Contacts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Entitlements --></label>
+            <name>Entitlements</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Contract Line Items --></description>
+        <label><!-- Service Contracts with Contract Line Items --></label>
+        <name>Service_Contracts_with_Contract_Line_Items</name>
+        <sections>
+            <label><!-- Contract Line Items --></label>
+            <name>Contract Line Items</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Entitlements --></description>
+        <label><!-- Service Contracts with Entitlements --></label>
+        <name>Service_Contracts_with_Entitlements</name>
+        <sections>
+            <label><!-- Entitlements --></label>
+            <name>Entitlements</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+</Translations>

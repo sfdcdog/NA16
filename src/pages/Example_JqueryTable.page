@@ -1,0 +1,23 @@
+<apex:page standardController="Account" extensions="Example_JqueryTableController">
+    <apex:includeScript value="{!$Resource.Core_IPS_Jquery11}"/>
+    <apex:includeScript value="{!Urlfor($Resource.Core_IPS_DataTable,'jquery-ui.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Core_IPS_DataTable,'jquery.dataTables.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Core_IPS_DataTable,'jquery.dataTables.css')}" />
+    <script type="text/javascript">    
+        $(document).ready(function(){     
+         $(".tblClass").DataTable(); 
+     });
+    </script>        
+    <apex:form >
+        <apex:outputPanel >
+            <apex:pageBlock >
+                <apex:pageBlockSection columns="1">
+                    <apex:pageBlockTable styleClass="tblClass" value="{!accList}" var="acc">
+                        <apex:column headerValue="Account Id" value="{!acc.Id}"/>
+                        <apex:column headerValue="Account Name" value="{!acc.Name}"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

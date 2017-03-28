@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Organization Admin</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Organization Admins</value>
+    </caseValues>
+    <fields>
+        <label><!-- User --></label>
+        <name>Admin__c</name>
+        <relationshipLabel><!-- Product Organization Admins --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Associated_Contact__c</name>
+        <relationshipLabel><!-- Product Organization Admins --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Admin --></label>
+        <name>Primary_Admin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Organization --></label>
+        <name>Product_Organization__c</name>
+        <relationshipLabel><!-- Product Organization Admins --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

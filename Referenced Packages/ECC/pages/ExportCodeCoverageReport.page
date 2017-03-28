@@ -1,0 +1,6 @@
+<apex:page controller="ECCR.CodeCoverageReportController" action="{!BindAllCodeCoverages}" readOnly="true" contentType="application/vnd.ms-excel#CodeCoverageAnayltics.csv">#Sr,Class Name,Type,Last Modified Date,Last Modified By,Number of Lines Covered,Number of Lines Uncovered,Total Lines,Code Coverage %
+  <apex:repeat value="{!objwrapAllCodeCoveragedDetails.lstWrapAllResults}" var="x">
+       {!x.sequence},{!x.classname},{!x.classtype},{!x.lastmodifieddate},{!x.lastmodifiedby},{!x.numberoflinescovered},{!x.numberoflinesnotcovered},{!x.totallines},{!x.codecoverage}
+  </apex:repeat>
+  Overall Code Coverage,,,,,,,,{!objwrapAllCodeCoveragedDetails.overallcodecoverage}
+</apex:page>

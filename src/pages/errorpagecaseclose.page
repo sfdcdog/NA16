@@ -1,0 +1,22 @@
+<apex:page standardController="Case" extensions="openvf">
+
+<apex:form >
+<apex:pageMessages />
+<apex:pageMessage severity="confirm" summary="You are about to close the Case" detail="Unless the survey is finished this case cannot be closed" />
+ <apex:commandButton value="Take me to Survey" action="{!openPage}" />
+ <apex:commandButton action="{!cancel}" value="Cancel" />
+</apex:form>
+
+<!--<script>
+function OpenVfpage()
+{
+&nbsp; window.showModalDialog("/apex/Survey","dialogWidth:800px; dialogHeight:200px; center:yes");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}
+</script>-->
+
+<!----<apex:commandButton value="Send Email" id="email" onclick="OpenVfpage();"/>--->
+
+
+
+
+</apex:page>

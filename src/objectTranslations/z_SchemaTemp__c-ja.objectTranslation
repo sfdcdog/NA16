@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>z_SchemaTemp</value>
+    </caseValues>
+    <fields>
+        <label><!-- fieldname --></label>
+        <name>fieldname__c</name>
+    </fields>
+    <fields>
+        <label><!-- objid --></label>
+        <name>objid__c</name>
+    </fields>
+    <fields>
+        <label><!-- objname --></label>
+        <name>objname__c</name>
+    </fields>
+    <layouts>
+        <layout>z_SchemaTempLayout</layout>
+        <sections>
+            <label><!-- カスタムリンク --></label>
+            <section>カスタムリンク</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

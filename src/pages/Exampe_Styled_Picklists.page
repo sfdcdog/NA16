@@ -1,0 +1,39 @@
+<!-- https://salesforcedevil.wordpress.com/2015/07/16/me/ -->
+<apex:page standardController="Account" standardStylesheets="false"  showHeader="false">
+    <apex:includeScript value="https://code.jquery.com/jquery-1.9.1.js"/>
+    <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"/> 
+    <apex:includeScript value="https://ajax.microsoft.com/ajax/jquery.validate/1.6/jquery.validate.min.js"/>    
+    <apex:includeScript value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/>    
+    <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <apex:form >
+        <apex:inputfield value="{!Account.CustomerPriority__c}" styleClass="form-control"  />
+        <apex:inputfield value="{!Account.Country__c}" styleClass="form-control"  />
+        <div id="dependentlst1">   
+            <apex:inputfield value="{!account.State__c}" styleClass="form-control" />
+        </div>
+        <div id="dependentlst2">
+            <apex:inputfield value="{!account.City__c}" styleClass="form-control"/>
+        </div>
+        <script>
+            // MutationObserver detect changes in the document
+                var MutationObserver = window.WebKitMutationObserver || window.MutationObserver || window.MozMutationObserver;
+                var observer = new MutationObserver(function(mutations) {
+            // If the form-control was removed from the list – re-assign it
+                    if(!$(‘#dependentlst1 select’).first().hasClass(‘form-control’))
+                        {
+                            $(‘#dependentlst1 select’).first().addClass(‘form-control’);
+                        }
+                    if(!$(‘#dependentlst2 select’).first().hasClass(‘form-control’))
+                        {
+                            $(‘#dependentlst2 select’).first().addClass(‘form-control’);
+                        }
+                }
+                );
+
+            var dependentlst1 = document.querySelector(‘#dependentlst1’);
+            var dependentlst2 = document.querySelector(‘#dependentlst2’);
+            observer.observe(dependentlst1, {childList: true,subtree: true,attributes: true});
+            observer.observe(dependentlst2, {childList: true,subtree: true,attributes: true});
+        </script>  
+    </apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<apex:page docType="html-5.0" controller="CustomLoginController" showHeader="false" sidebar="false" standardStylesheets="false">
+    <apex:form >
+        <div class="wrapper">
+            <div class="inside">
+                <h2>Login to Community</h2>
+                <div class="form">
+                    <apex:pageMessages id="error" />
+                    <p>Username</p>
+                    <apex:inputText value="{! username }" styleClass="userNameInput" />
+                    <p>Password</p>
+                    <apex:inputSecret value="{! password }" styleClass="passwordInput" />
+                    <apex:commandLink action="{! login }" value="SIGN IN" styleClass="signInButton" />
+                </div>
+            </div>
+        </div>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,284 @@
+<apex:page controller="ECCR.CodeCoverageReportController" sidebar="false" docType="html-5.0" showHeader="true" standardStylesheets="false">
+<!--applyHtmlTag="false" applyBodyTag="false" -->
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<apex:stylesheet value="{!URLFOR($Resource.ECCR__lightning, '/assets/styles/salesforce-lightning-design-system-vf.min.css')}"/>
+<apex:includeScript value="{!URLFOR($Resource.ECCR__jquery, 'jquery-1.12.0.min.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.ECCR__jquery, '/jqueryui/jquery-ui.min.js')}"/>
+<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+    .below75 td {
+        color:#FF0000;
+    }
+    .above75 td {
+        color:#06C406;
+    }
+</style>
+<body>
+    <div class="slds">
+        <div class="slds-grid" style="margin-top:10px;">
+            <div class="slds-col slds-has-flexi-truncate">
+                <h1 class="slds-text-heading--medium slds-truncate" title="Smart Code Coverage Analytic"><b>Code Coverage Result</b></h1>
+            </div>
+        </div>
+        <div class="slds-form--inline" style="margin-top:10px;">
+            <div class="slds-form-element">
+                <label class="slds-checkbox" for="chkApexclass">
+                    <input name="checkbox" type="checkbox" id="chkApexclass" />
+                    <span class="slds-checkbox--faux"></span>
+                    <span class="slds-form-element__label">Apex Classes</span>
+                </label>
+            </div>
+            <div class="slds-form-element">
+                <label class="slds-checkbox" for="chkApextrigger">
+                    <input name="checkbox" type="checkbox" id="chkApextrigger" />
+                    <span class="slds-checkbox--faux"></span>
+                    <span class="slds-form-element__label">Apex Triggers</span>
+                </label>
+            </div>
+            <button class="slds-button slds-button--brand" type="button" id="btnCodeCoverage">Get Code Coverage</button>
+            <a href = "#" class="slds-button slds-button--brand" type="button" id="btnExportCodeCoverage">Export Code Coverage Result</a>
+            <button class="slds-button slds-button--brand" type="button" id="btnConfiguration">Configuration</button>
+        </div>
+        <div style="margin-top:10px;">
+            <table>
+                <tr>
+                    <td width="50%" style="padding:10px;"><div style="text-align:left;color:#54698d;font-weight:bold;" id="divOverallCodeCoverage"></div></td>
+                    <td width="50%"><div style="text-align:right;color:#54698d;"><b>Note:</b> Please run all test classes to get the updated 
+                            result.</div></td>
+                </tr>
+            </table>
+            <div class="slds-scrollable--y" style="max-height:400px;margin-top:10px;">
+                <table id="tblCodeCoverageResult" class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal" width="100%">
+                    <thead>
+                        <tr class="slds-text-heading--label" scope="col">
+                            <th scope="col" width="5%">
+                                <span class="slds-truncate" ><b>#Sr</b></span>
+                                <i class="fa fa-angle-up" style="display:none;"></i>
+                            </th>
+                            <th scope="col" width="20%" >
+                                <span class="slds-truncate" ><b>Class Name</b></span>
+                                <i class="fa fa-angle-up" style="display:none;"></i>
+                            </th>
+                            <th scope="col" width="15%">
+                                <span class="slds-truncate" ><b>Type</b></span>
+                                <i class="fa fa-angle-up" style="display:none;"></i>
+                            </th>
+                            <th scope="col" width="10%">
+                                <span class="slds-truncate"><b>Last Modified Date</b></span>
+                                <i class="fa fa-angle-up" style="display:none;"></i>
+                            </th>
+                            <th scope="col" width="10%">
+                                <span class="slds-truncate"><b>Last Modified By</b></span>
+                                <i class="fa fa-angle-up" style="display:none;"></i>
+                            </th>
+                            <th scope="col" width="10%">
+                                <span class="slds-truncate">
+                                <b>Number of Lines Covered</b></span>
+                                <i class="fa fa-angle-up" style="display:none;"></i>
+                            </th>                                
+                            <th scope="col" width="10%">
+                                <span class="slds-truncate"><b>Number of Lines Uncovered</b></span>
+                                <i class="fa fa-angle-up" style="display:none;"></i>
+                            </th>
+                            <th scope="col" width="10%" >
+                                <span class="slds-truncate"><b>Total Lines</b></span>
+                                <i class="fa fa-angle-up" style="display:none;"></i>
+                            </th>
+                            <th scope="col" width="10%">
+                                <span class="slds-truncate"><b>Code Coverage %</b></span>
+                                <i class="fa fa-angle-up" style="display:none;"></i>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody"><tr class="slds-hint-parent"><td colspan="100%"><i>No Records to display.</i></td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        function getMessagebox(){
+            return '<div id="divmodelpopup"> \
+              <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open"> \
+                <div class="slds-modal__container"> \
+                  <div class="slds-modal__header"> \
+                    <h2 class="slds-text-heading--medium">{title}</h2> \
+                    <button class="slds-button slds-button--icon-inverse slds-modal__close btncancel"> \
+                      <span class="slds-assistive-text">Close</span> \
+                    </button> \
+                  </div> \
+                  <div class="slds-modal__content"> \
+                    <div> \
+                      <p>{text}</p> \
+                    </div> \
+                  </div> \
+                  <div class="slds-modal__footer"> \
+                    <div class="slds-x-small-buttons--horizontal"> \
+                      {close} \
+                      {ok} \
+                    </div> \
+                  </div> \
+                </div> \
+              </div> \
+              <div class="slds-backdrop slds-backdrop--open"></div> \
+            </div>';
+        }
+        $(document).on('click','#btnConfiguration',function() {
+            var data = getMessagebox();
+            data = data.replace('{title}','Configuration');
+            var dtext = "<b>1. Remote site setting</b><p>Add a value for Remote site setting(In same org in which package is installed) \
+                 Goto Setup > Administration Setup > Security Controls > Remote Site Settings Add value to your Salesforce instance, for  \
+                 example 'https://XX.salesforce.com'</p><br/><b>2. Custom Setting Instance URL Setup</b><p>Please set your Base URL. \
+                 Go to Setup > Develop > Custom Settings > Code Coverage Analytic Configuration > Manage > New. Set the name to <b>'instanceURL'</b> \
+                 and the value to your Salesforce instance, for example 'https://XX.salesforce.com'</p><br/><p>**Please replace 'XX' in above two place with domain of your organization</p>";
+            data = data.replace('{text}',dtext);
+            var btnok = '<button class="slds-button slds-button--neutral slds-button--brand btncancel">Close</button>'
+            data = data.replace('{ok}',btnok);
+            data = data.replace('{close}','');
+            $('.slds').find('#divmodelpopup').remove();
+            $('.slds').append(data);
+        });
+        $(document).on('click','.btncancel',function(){
+            $('.slds').find('#divmodelpopup').remove();
+        });
+        $(document).on('click','#btnExportCodeCoverage',function() {
+            var blnclass = $('#chkApexclass').is(':checked');
+            var blntrigger = $('#chkApextrigger').is(':checked');
+            if(blnclass == false && blntrigger == false) {
+                var data = getMessagebox();
+                data = data.replace('{title}','Message');
+                data = data.replace('{text}','Please select at least one to get the code coverage report.');
+                var btnok = '<button class="slds-button slds-button--neutral slds-button--brand btncancel">OK</button>'
+                data = data.replace('{ok}',btnok);
+                data = data.replace('{close}','');
+                $('.slds').find('#divmodelpopup').remove();
+                $('.slds').append(data);
+            } else {
+                var newhref = '/apex/ExportCodeCoverageReport?class='+blnclass+'&trigger='+blntrigger+'';
+                $(this).attr('href',newhref);
+            }
+        });
+        $(document).on('click','#btnCodeCoverage',function() {
+            var blnclass = $('#chkApexclass').is(':checked');
+            var blntrigger = $('#chkApextrigger').is(':checked');
+            if(blnclass == false && blntrigger == false) {
+                var data = getMessagebox();
+                data = data.replace('{title}','Message');
+                data = data.replace('{text}','Please select at least one to get the code coverage.');
+                var btnok = '<button class="slds-button slds-button--neutral slds-button--brand btncancel">OK</button>'
+                data = data.replace('{ok}',btnok);
+                data = data.replace('{close}','');
+                $('.slds').find('#divmodelpopup').remove();
+                $('.slds').append(data);
+            } else {
+                BindAllClassResults();
+            }
+        });
+        function BindAllClassResults() {
+            $('#divProcessing').show();
+            var blnclass = $('#chkApexclass').is(':checked');
+            var blntrigger = $('#chkApextrigger').is(':checked');
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.CodeCoverageReportController.allOverallCodeCoveraveList}',blnclass,blntrigger,
+                function (result, event) {
+                    if (event.status) {
+                        if(result == null || result == undefined) {
+                            var data = getMessagebox();
+                            data = data.replace('{title}','Message');
+                            data = data.replace('{text}','Configuration was not complete or test classes are executed.');
+                            var btnok = '<button class="slds-button slds-button--neutral slds-button--brand btncancel">OK</button>'
+                            data = data.replace('{ok}',btnok);
+                            data = data.replace('{close}','');
+                            $('.slds').find('#divmodelpopup').remove();
+                            $('.slds').append(data);
+                        }
+                        $('#tblCodeCoverageResult').find('tbody').empty();
+                        if(result != null){
+                            var tr = '<tr class="slds-hint-parent {class}"> \
+                                <td class="slds-cell-wrap slds-cell-shrink">{0}</td> \
+                                <td class="slds-cell-wrap slds-cell-shrink">{1}</td> \
+                                <td class="slds-cell-wrap slds-cell-shrink">{8}</td> \
+                                <td class="slds-cell-wrap slds-cell-shrink">{2}</td> \
+                                <td class="slds-cell-wrap slds-cell-shrink">{3}</td> \
+                                <td class="slds-cell-wrap slds-cell-shrink">{4}</td> \
+                                <td class="slds-cell-wrap slds-cell-shrink">{5}</td> \
+                                <td class="slds-cell-wrap slds-cell-shrink">{6}</td> \
+                                <td class="slds-cell-wrap slds-cell-shrink">{7}</td> \
+                            </tr>';
+                            
+                            $('#divOverallCodeCoverage').empty();
+                            if(result.overallcodecoverage != undefined && result.overallcodecoverage >= 0) {
+                                var codec = 'Your overall code coverage is '+result.overallcodecoverage+'%.';
+                                $('#divOverallCodeCoverage').text(codec);
+                            }
+                            if(result.lstWrapAllResults != undefined) {
+                                $.map(result.lstWrapAllResults, function(obj, i ) {    
+                                    var tmptr = tr;  
+                                    tmptr = tmptr.replace('{0}',obj.sequence);
+                                    tmptr = tmptr.replace('{8}',obj.classtype);
+                                    tmptr = tmptr.replace('{1}',obj.classname);
+                                    tmptr = tmptr.replace('{2}',ConvertDatetime(obj.lastmodifieddate));
+                                    tmptr = tmptr.replace('{3}',obj.lastmodifiedby);
+                                    tmptr = tmptr.replace('{4}',obj.numberoflinescovered);
+                                    tmptr = tmptr.replace('{5}',obj.numberoflinesnotcovered);
+                                    tmptr = tmptr.replace('{6}',obj.totallines);
+                                    tmptr = tmptr.replace('{7}',obj.codecoverage );
+                                    if(obj.codecoverage >= 75) {
+                                        tmptr = tmptr.replace('{class}','above75');
+                                    } else {
+                                        tmptr = tmptr.replace('{class}','below75');
+                                    }
+                                    $('#tblCodeCoverageResult').find('tbody').append(tmptr);
+                                });
+                            }
+                        } else {
+                            var nodata = '<tr class="slds-hint-parent"> \
+                                <td class="slds-cell-wrap slds-cell-shrink" colspan="100%"><i>No records to display.</i></td></tr>';
+                            $('#tblCodeCoverageResult').find('tbody').append(nodata);
+                        }
+                    }
+                }
+            );
+            window.setTimeout(function() {
+                $('#divProcessing').hide();
+            }, 2000);
+        }
+        
+        function ConvertDatetime(strDate){
+            var date = new Date(strDate);
+            var strdt = '';
+            strdt += date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear();
+            return strdt;
+        }
+    </script>
+</html>
+    <!------------- Start: Processing Div---------------------------------------->
+    <style>
+        .ProcessingBackground {
+            background-color: #fff;
+            opacity: 0.70;
+            filter: alpha(opacity = 50);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 8551;
+            top:0;
+            left:0;
+        }
+        .Processing {
+            z-index: 8552;
+            left: 50%;
+            top: 50%;
+            text-align: center;
+            position: fixed;
+        } 
+    </style>
+    <div id="divProcessing" style="display:none;">
+        <div class="ProcessingBackground"></div>
+        <div class="Processing">           
+            <image alt="Processing" width="64" height="64" src="{!URLFOR($Resource.lightning, '/assets/images/spinners/slds_spinner_brand.gif')} " />
+        </div>
+    </div>  
+    <!------------- End: Processing Div---------------------------------------->
+</apex:page>

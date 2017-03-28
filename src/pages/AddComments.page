@@ -1,0 +1,18 @@
+<apex:page standardController="case" extensions="AddCommentController">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection columns="1">
+        <!--<apex:inputTextarea richText="true" value="{!newCase.Comment__c}" id="rta" label="" style="width: 1000px" />-->
+        <apex:inputfield value="{!newCase.Comment__c}" id="qwqw" label="" style="width:100%"/>
+            </apex:pageBlockSection>
+            <apex:PageBlockButtons >
+                <apex:commandButton value="Save Comment" action="{!saveComment}"  />
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:PageBlockButtons>
+            </apex:pageBlock>
+    </apex:form>
+  
+    
+            
+    
+</apex:page>

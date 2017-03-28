@@ -1,0 +1,50 @@
+<apex:page >
+    
+    <!-- Remote Objects definition to set accessible sObjects and fields -->
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Account" jsShorthand="Acct" fields="Name,Id, AccountNumber">
+            <!--<apex:remoteObjectField name="Phone__c" jsShorthand="Phone"/>-->
+        </apex:remoteObjectModel>
+    </apex:remoteObjects>
+    
+    <script>
+        Visualforce.remoting.timeout = 120000; // Set timeout at page level
+        var fetchAccts = function(){
+            console.log('coming in here');
+            // Create a new Remote Object
+            var wh = new SObjectModel.Acct();
+            console.log('Obj info'+ JSON.stringify(wh));
+            // Use the Remote Object to query for 10 warehouse records
+            wh.retrieve({ limit: 10 }, function(err, records, event){
+                if(err) {
+                    console.log('error'+err.message);
+                    alert(err.message);                    
+                }
+                else {
+                    console.log('Rcs'+records);
+                    var ul = document.getElementById("accList");
+                    records.forEach(function(record) {
+                        // Build the text for a warehouse line item
+                        var whText = record.get("Name");
+                        whText += " -- ";
+                        whText += record.get("AccountNumber");
+                        
+                        // Add the line item to the warehouses list
+                        var li = document.createElement("li");
+                        li.appendChild(document.createTextNode(whText));
+                        ul.appendChild(li);
+                    });
+                }
+            });
+        };
+    </script>
+
+    <h1>Retrieve Accts via Remote Objects</h1>
+
+    <p>Accts:</p>
+
+    <ul id="accList">
+    </ul>
+    <button onclick="fetchAccts()">Retrieve Accts</button>
+
+</apex:page>

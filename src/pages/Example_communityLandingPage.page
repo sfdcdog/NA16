@@ -1,0 +1,5 @@
+<apex:page tabStyle="Case" sidebar="false">
+    <apex:sectionHeader title="{!$objectType.Case.LabelPlural}" subtitle="Home"/>
+    <apex:ListViews type="Case">
+    </apex:ListViews>
+</apex:page>

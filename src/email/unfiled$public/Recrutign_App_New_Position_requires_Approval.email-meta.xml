@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send notification email to designaated approver when new positon record requries approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Recrutign App: New Position requires Approval</name>
+    <style>none</style>
+    <subject>New Position requries approval</subject>
+    <type>text</type>
+</EmailTemplate>

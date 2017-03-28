@@ -1,0 +1,21 @@
+<apex:page >
+    <apex:includeScript value="/support/console/34.0/integration.js" />
+    <a href="#" onClick="testGetWorks();return false;">Get Agent’s Current Work Items</a>
+    <script type="text/javascript">
+        function testGetWorks() {
+            //These values are for example purposes only.
+            sforce.console.presence.getAgentWorks(function(result) {
+                if (result.success) {
+                    alert('Get work items successful');
+                    var works = JSON.parse(result.works);
+                    alert('First Agent Work ID is: ' + works[0].workId);
+                    alert('Assigned Entity Id of the first Agent Work is: ' +
+                        works[0].workItemId);
+                    alert('Is first Agent Work Engaged: ' + works[0].isEngaged);
+                } else {
+                    alert('Get work items failed');
+                }
+            });
+        }
+    </script>
+</apex:page>

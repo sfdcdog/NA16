@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SObjectField</value>
+    </caseValues>
+    <fields>
+        <label><!-- byteLength --></label>
+        <name>byteLength__c</name>
+    </fields>
+    <fields>
+        <label><!-- calculatedFormula --></label>
+        <name>calculatedFormula__c</name>
+    </fields>
+    <fields>
+        <label><!-- defaultValueFormula --></label>
+        <name>defaultValueFormula__c</name>
+    </fields>
+    <fields>
+        <label><!-- digits --></label>
+        <name>digits__c</name>
+    </fields>
+    <fields>
+        <label><!-- inlineHelpText --></label>
+        <name>inlineHelpText__c</name>
+    </fields>
+    <fields>
+        <label><!-- isAccessible --></label>
+        <name>isAccessible__c</name>
+    </fields>
+    <fields>
+        <label><!-- isAutoNumer --></label>
+        <name>isAutoNumer__c</name>
+    </fields>
+    <fields>
+        <label><!-- isCalculated --></label>
+        <name>isCalculated__c</name>
+    </fields>
+    <fields>
+        <label><!-- isCaseSensitive --></label>
+        <name>isCaseSensitive__c</name>
+    </fields>
+    <fields>
+        <label><!-- isCreateable --></label>
+        <name>isCreateable__c</name>
+    </fields>
+    <fields>
+        <label><!-- isCustom --></label>
+        <name>isCustom__c</name>
+    </fields>
+    <fields>
+        <label><!-- isDefaultedOnCreate --></label>
+        <name>isDefaultedOnCreate__c</name>
+    </fields>
+    <fields>
+        <label><!-- isDependentPicklist --></label>
+        <name>isDependentPicklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- isDeprecatedAndHidden --></label>
+        <name>isDeprecatedAndHidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- isExternalID --></label>
+        <name>isExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- isFilterable --></label>
+        <name>isFilterable__c</name>
+    </fields>
+    <fields>
+        <label><!-- isGroupable --></label>
+        <name>isGroupable__c</name>
+    </fields>
+    <fields>
+        <label><!-- isHtmlFormatted --></label>
+        <name>isHtmlFormatted__c</name>
+    </fields>
+    <fields>
+        <label><!-- isIdLookup --></label>
+        <name>isIdLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- isNameField --></label>
+        <name>isNameField__c</name>
+    </fields>
+    <fields>
+        <label><!-- isNamePointing --></label>
+        <name>isNamePointing__c</name>
+    </fields>
+    <fields>
+        <label><!-- isNillable --></label>
+        <name>isNillable__c</name>
+    </fields>
+    <fields>
+        <label><!-- isRestrictedPicklist --></label>
+        <name>isRestrictedPicklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- isSortable --></label>
+        <name>isSortable__c</name>
+    </fields>
+    <fields>
+        <label><!-- isUnique --></label>
+        <name>isUnique__c</name>
+    </fields>
+    <fields>
+        <label><!-- isUpdateable --></label>
+        <name>isUpdateable__c</name>
+    </fields>
+    <fields>
+        <label><!-- isWriteRequiredMasterRead --></label>
+        <name>isWriteRequiredMasterRead__c</name>
+    </fields>
+    <fields>
+        <label><!-- label --></label>
+        <name>label__c</name>
+    </fields>
+    <fields>
+        <label><!-- length --></label>
+        <name>length__c</name>
+    </fields>
+    <fields>
+        <label><!-- localName --></label>
+        <name>localName__c</name>
+    </fields>
+    <fields>
+        <label><!-- name --></label>
+        <name>name__c</name>
+    </fields>
+    <fields>
+        <label><!-- picklistentries --></label>
+        <name>picklistentries__c</name>
+    </fields>
+    <fields>
+        <label><!-- precision --></label>
+        <name>precision__c</name>
+    </fields>
+    <fields>
+        <label><!-- relationshipName --></label>
+        <name>relationshipName__c</name>
+    </fields>
+    <fields>
+        <label><!-- relationshipOrder --></label>
+        <name>relationshipOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- scale --></label>
+        <name>scale__c</name>
+    </fields>
+    <fields>
+        <label><!-- soptype --></label>
+        <name>soaptype__c</name>
+    </fields>
+    <fields>
+        <label><!-- type --></label>
+        <name>type__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_SObjectDescription --></label>
+        <name>z_SObjectDescription__c</name>
+        <relationshipLabel><!-- SObjectField --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>z_FieldDescriptionLayout</layout>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- カスタムリンク --></label>
+            <section>カスタムリンク</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

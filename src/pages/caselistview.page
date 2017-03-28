@@ -1,0 +1,49 @@
+<apex:page standardController="Case" recordSetVar="cases" 
+               
+    sidebar="false">
+    
+    <!----------<apex:tabPanel >
+        <apex:tab disabled="true"/>
+            
+        
+    </apex:tabPanel>---->
+
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlock >
+                <apex:panelGrid columns="2">
+                    <apex:outputLabel value="View:"/>
+                    <apex:selectList value="{!filterId}" size="1">
+                        <apex:actionSupport event="onchange" rerender="case_table"/>
+                        <apex:selectOptions value="{!listviewoptions}"/>
+                    </apex:selectList>
+                </apex:panelGrid>
+            </apex:pageBlock>
+
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!URLFOR($Action.Case.NewCase)}" value="New Case"/>
+                <apex:commandButton action="{!URLFOR($Action.Case.Clone)}" value="Clone Case"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!cases}" var="case" id="case_table">
+            
+           <!------ <apex:column>
+                <apex:inputCheckbox value="{!case.selected}"/>
+            </apex:column>------->
+            
+                <apex:column headerValue="Case Number"> 
+                <apex:outputLink value="/{!case.id}"> {!case.casenumber} </apex:outputLink>      
+            </apex:column>
+            
+
+                
+        <!---<apex:column value="{!case.CaseNumber}"/>--->
+        <apex:column value="{!case.Contactid}"/>
+        <apex:column value="{!case.Subject}"/>
+        <apex:column value="{!case.Status}"/>
+        <apex:column value="{!case.Priority}"/>
+        <apex:column value="{!case.CreatedDate}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

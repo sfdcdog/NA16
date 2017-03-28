@@ -1,0 +1,52 @@
+<apex:page >
+    
+    <!-- Remote Objects definition to set accessible sObjects and fields -->
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Position__c" jsShorthand="Position" fields="Name,Id">
+            <apex:remoteObjectField name="Job_Description__c" jsShorthand="JD"/>
+        </apex:remoteObjectModel>
+    </apex:remoteObjects>
+    
+    <script>
+        Visualforce.remoting.timeout = 120000; // Set timeout at page level
+        var fetchPositions = function(){
+            console.log('coming in here');
+            // Create a new Remote Object
+            var wh = new SObjectModel.Position();
+            console.log('Obj info'+ JSON.stringify(wh));
+            // Use the Remote Object to query for 10 warehouse records
+            wh.retrieve({ limit: 10 }, function(err, records, event){
+                console.log('$$$$$$'+responsestatusCode);
+                if(err) {
+                    console.log('error'+err.message);
+                    alert(err.message);                    
+                }
+                else {
+                    console.log('Rcs'+JSON.stringify(records));
+                    var ul = document.getElementById("psList");
+                    records.forEach(function(record) {
+                        // Build the text for a warehouse line item
+                        var whText = record.get("Name");
+                        whText += " -- ";
+                        whText += record.get("JD");
+
+                        
+                        // Add the line item to the warehouses list
+                        var li = document.createElement("li");
+                        li.appendChild(document.createTextNode(whText));
+                        ul.appendChild(li);
+                    });
+                }
+            });
+        };
+    </script>
+
+    <h1>Retrieve Positions via Remote Objects</h1>
+
+    <p>Positions:</p>
+
+    <ul id="psList">
+    </ul>
+    <button onclick="fetchPositions()">Retrieve Positions</button>
+
+</apex:page>

@@ -1,0 +1,8 @@
+Global Picklists
+Event Monitoring (Login Forensics)
+Social Media
+Duplicate rules, Matching Rules, Duplicate record Sets
+Data.com, Creating Account, Contact, Lead From Data.com
+Opportunity Products(LineItem), Price Books(Price Book Entry), Contact roles
+Topics, Managament, Feed, Grouping.
+Knowledge, Articles Management

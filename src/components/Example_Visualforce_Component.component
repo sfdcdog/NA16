@@ -1,0 +1,82 @@
+<apex:component controller="Example_VisualForce_Component_Controller" access="global">
+    <!-- Javascript goes in the document HEAD -->
+    <script type="text/javascript">
+        function altRows(id) {
+            if (document.getElementsByTagName) {
+
+                var table = document.getElementById(id);
+                var rows = table.getElementsByTagName("tr");
+
+                for (i = 0; i < rows.length; i++) {
+                    if (i % 2 == 0) {
+                        rows[i].className = "evenrowcolor";
+                    } else {
+                        rows[i].className = "oddrowcolor";
+                    }
+                }
+            }
+        }
+        window.onload = function() {
+            altRows('alternatecolor0');
+            altRows('alternatecolor1');
+
+        }
+    </script>
+
+    <!-- CSS goes in the document HEAD or added to your external stylesheet -->
+    <style type="text/css">
+        table.altrowstable {
+            font-family: verdana, arial, sans-serif;
+            font-size: 11px;
+            color: #333333;
+            border-width: 1px;
+            border-color: #a9c6c9;
+            border-collapse: collapse;
+            float: left;
+        }
+        
+        table.altrowstable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        
+        table.altrowstable td {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        
+        table.altrowstable th {
+            background-color: #B2CFD8;
+        }
+        
+        .oddrowcolor {
+            background-color: blue;
+        }
+        
+        .evenrowcolor {
+            background-color: green;
+        }
+    </style>
+    <apex:attribute name="currentCaseId" type="String" required="required" description="current case id to fetch comments" assignTo="{!caseId}" />
+    <h3>Case Notes for{!caseId}</h3>
+    <br/>
+    <apex:dataTable value="{!RecentComments}" var="ab" border="1" width="50%" styleclass="altrowstable" id="alternatecolor0">
+        <apex:column value="{!ab.Comment__c}" headerValue="Private Case Notes" />
+    </apex:dataTable>
+    <br/><br/>
+    <apex:dataTable value="{!PublicComments}" var="ad" border="1" width="50%" styleclass="altrowstable" id="alternatecolor1">
+        <apex:column value="{!ad.Comment__c}" headerValue="Public Case Notes" />
+    </apex:dataTable>
+
+    <h3 style="clear:left; height:25px;">Case History</h3>
+    <br/>
+    <apex:dataTable value="{!recentHistory}" var="ac" border="1" width="100%">
+        <apex:column value="{!ac.field}" headerValue="Field" />
+        <!--<apex:column style="background-color:orange" value="{!ac.oldValue}" headerValue="Old Value"/>-->
+        <apex:column style="background-color:orange" value="{!ac.newValue}" headerValue="Old Value" />
+    </apex:dataTable>
+</apex:component>

@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="Chnage in Priority" recipientType="User" relatedToType="Case">
+<messaging:plainTextEmailBody >
+
+
+
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

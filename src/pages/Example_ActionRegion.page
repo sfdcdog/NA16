@@ -1,0 +1,26 @@
+<!--THIS IS AN EXAMPLE WHERE SELECTING Prospecting value for stage will render another opprotunity field on the page-->
+<apex:page standardController="Opportunity">
+  <apex:form >
+    <apex:pageBlock title="Enter Opportunity Information">
+      <apex:pageBlockButtons location="bottom">
+        <apex:commandButton value="Save" action="{!Save}" />
+        <apex:commandButton value="Cancel" action="{!Cancel}" immediate="true" /> </apex:pageBlockButtons>
+      <apex:PageblockSection columns="1">
+        <apex:inputField value="{!Opportunity.Name}" />
+        <apex:PageBlockSectionItem >
+          <apex:outputLabel value="Stage" />
+          <!--- Field to be re-rendered-->
+          <apex:actionRegion >
+            <apex:inputField value="{!Opportunity.StageName}">
+              <apex:actionSupport event="onchange" reRender="ajaxrequest" /> </apex:inputField>
+          </apex:actionRegion>
+        </apex:PageBlockSectionItem>
+      </apex:PageblockSection>
+      <!---------What to Re-render and on What Condition----------->
+      <apex:outputPanel id="ajaxrequest">
+        <apex:pageBlockSection rendered="{!Opportunity.StageName=='Prospecting'}">
+          <apex:inputField value="{!Opportunity.CloseDate}" /> </apex:pageBlockSection>
+      </apex:outputPanel>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

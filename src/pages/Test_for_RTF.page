@@ -1,0 +1,16 @@
+<apex:page standardController="Opportunity" standardStylesheets="true" extensions="OpportunityClosedLostControllerExtension" showHeader="true" sidebar="true"> 
+   
+    <apex:form id="theForm" >
+        <apex:pageBlock id="pbMain" mode="edit" title="Opportunity">
+            <apex:pageBlockButtons location="bottom" >
+                <apex:commandButton action="{!saveOpportunity}" value="Save" onclick="return Validate()"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection id="pbS1" columns="1">
+                <apex:pageBlockSectionItem >
+                    <font color="#ff0000">Please supply some information on why this opportunity was lost.</font>
+                </apex:pageBlockSectionItem>                    
+                <apex:inputField style="width:300px;height:100px" id="lostNotes"    required="true"  value="{!opportunity.Lost_Notes__c}"  />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

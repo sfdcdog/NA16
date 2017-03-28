@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Trigger Executions Example</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Trigger Executions Examples</value>
+    </caseValues>
+    <fields>
+        <label><!-- Example_TestCheckBox --></label>
+        <name>Example_TestCheckBox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Example_TestName --></label>
+        <name>Example_TestName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

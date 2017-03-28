@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Routing Attribute</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Routing Attributes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <picklistValues>
+            <masterLabel>ANY</masterLabel>
+            <translation><!-- ANY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hitachi</masterLabel>
+            <translation><!-- Hitachi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LG</masterLabel>
+            <translation><!-- LG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samsung</masterLabel>
+            <translation><!-- Samsung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sony Corp</masterLabel>
+            <translation><!-- Sony Corp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toshiba</masterLabel>
+            <translation><!-- Toshiba --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assign To User --></label>
+        <name>Assign_To_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Null Attributes --></label>
+        <name>Has_Null_Attributes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Org --></label>
+        <name>Product_Org__c</name>
+        <relationshipLabel><!-- Routing Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Products --></label>
+        <name>Products__c</name>
+        <picklistValues>
+            <masterLabel>ANY</masterLabel>
+            <translation><!-- ANY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saber</masterLabel>
+            <translation><!-- Saber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vaio</masterLabel>
+            <translation><!-- Vaio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walkman</masterLabel>
+            <translation><!-- Walkman --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Queue ID --></label>
+        <name>Queue_ID__c</name>
+        <picklistValues>
+            <masterLabel>00Gj0000001HRAlEAO</masterLabel>
+            <translation><!-- 00Gj0000001HRAlEAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>00Gj0000001HX7sEAG</masterLabel>
+            <translation><!-- 00Gj0000001HX7sEAG --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Queue Name --></label>
+        <name>Queue_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>UserName__c</name>
+        <relationshipLabel><!-- Routing Attributes --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Routing Attribute Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

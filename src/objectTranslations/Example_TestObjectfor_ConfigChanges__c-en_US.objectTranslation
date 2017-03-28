@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Example_TestObjectfor_ConfigChanges</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Example_TestObjectfor_ConfigChanges</value>
+    </caseValues>
+    <fields>
+        <label><!-- Example_Testfor_FieldDependencies2 --></label>
+        <name>Example_Testfor_FieldDependencies2__c</name>
+        <picklistValues>
+            <masterLabel>TestX1</masterLabel>
+            <translation><!-- TestX1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TestX2</masterLabel>
+            <translation><!-- TestX2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TestX3</masterLabel>
+            <translation><!-- TestX3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TestX4</masterLabel>
+            <translation><!-- TestX4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TestX5</masterLabel>
+            <translation><!-- TestX5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Example_Testfor_FieldDependencies --></label>
+        <name>Example_Testfor_FieldDependencies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Example_Testfor_RecordType_Picklist --></label>
+        <name>Example_Testfor_RecordType_Picklist__c</name>
+        <picklistValues>
+            <masterLabel>Test1</masterLabel>
+            <translation><!-- Test1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test2</masterLabel>
+            <translation><!-- Test2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test3</masterLabel>
+            <translation><!-- Test3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test4</masterLabel>
+            <translation><!-- Test4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test5</masterLabel>
+            <translation><!-- Test5 --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Example_RecordType_1 --></label>
+        <name>Example_RecordType_1</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

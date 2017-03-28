@@ -1,0 +1,32 @@
+<apex:page id="mypage" standardController="case" extensions="CommentScreenController" sidebar="false" showHeader="false" tabStyle="Product_Org__c" >
+<apex:includeScript value="{!URLFOR($Resource.ckeditor, '/ckeditor/ckeditor.js')}"/>
+    <apex:form >
+        <apex:pageBlock id="myblock">
+             <apex:actionRegion >
+                <apex:pageBlockSection title="Recent Comments" id="sec1" columns="1">
+            
+                    <apex:pageBlockTable value="{!casecomments}" var="comnt" columnsWidth="100%" cellspacing="20px" border="color:black">
+                        <!--<apex:column style="{!comnt.BgColor__c}"  Rendered="{!ExternalColumn}" > 
+                         <b>{!comnt.Notetype__c }</b>&nbsp; &nbsp; &nbsp; <b><apex:outputField value="{!comnt.CreatedDate }" /></b> &nbsp; &nbsp; &nbsp; <b><apex:outputText value="Intel Agent" rendered="{!comnt.EShowIntelAgent__c}"  /></b><b><apex:outputField value="{!comnt.NickName__c }" rendered="{!comnt.EShowNickName__c}" /></b> <br/>
+                         <apex:outputField value="{!comnt.Rich_Comment__c}"></apex:outputField>
+                        </apex:column> 
+                        
+                        <apex:column style="{!comnt.BgColor__c}"  Rendered="{!InternalColumn}" >
+                         <b>{!comnt.Notetype__c }</b>&nbsp; &nbsp; &nbsp; <b><apex:outputField value="{!comnt.CreatedDate }" /></b> &nbsp; &nbsp; &nbsp; <b><apex:outputText value="Intel Agent" rendered="{!comnt.IShowIntelAgent__c}"  /></b><b><apex:outputField value="{!comnt.NickName__c }" rendered="{!comnt.IShowNickName__c}" /></b> <br/>
+                         <apex:outputField value="{!comnt.Rich_Comment__c}"></apex:outputField>
+                        </apex:column> -->
+                        
+                        <apex:column style="{!comnt.BgColor__c}"  >
+                         <b>{!comnt.Notetype__c }</b>&nbsp; &nbsp; &nbsp; <b><apex:outputField value="{!comnt.CreatedDate }" /></b> &nbsp; &nbsp; &nbsp; <b><apex:outputField value="{!comnt.CreatedBy.Firstname}" /></b> <br/>
+                         <apex:outputField value="{!comnt.Rich_Comment__c}"></apex:outputField>
+                        </apex:column>
+                         
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:actionRegion>
+        </apex:pageBlock>
+        <c:vfProxy />
+    <c:vfProxy_autoHeight />
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,68 @@
+<apex:page standardController="Account" extensions="Example_VFRemotingController">
+    <apex:includeScript value="{!$Resource.Core_IPS_Jquery11}"/>
+    <apex:includeScript value="{!Urlfor($Resource.Core_IPS_DataTable,'jquery-ui.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Core_IPS_DataTable,'jquery.dataTables.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Core_IPS_DataTable,'jquery.dataTables.css')}"/>
+    <script type="text/javascript">
+    
+        $( document ).ready(function(){     
+         //$(".tblClass").DataTable();         
+         executeRemoting();         
+        });
+        
+        function createDataTable(TableID,cols,result){             
+            $("."+TableID).DataTable({
+             "paginate": true,
+             "scrollY": 250,
+             "bFilter": true,
+             "responsive": true,
+             "aoColumns": cols,
+               "aaData": result
+             });
+        }
+        
+        function executeRemoting(){
+            
+            Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.Example_VFRemotingController.getAccounts}',
+             
+            function(result, event){
+                //console.log('RESULT:   '+JSON.stringify(result));
+                console.log('EVENT:   '+Object.getOwnPropertyNames(event));
+                console.log('statuscode:  '+event.statusCode);
+                console.log('type:  '+event.type);
+                console.log('tid:  '+event.tid);
+                console.log('ref:  '+event.ref);
+                console.log('action: '+event.action);
+                console.log('method:  '+event.method);
+                console.log('result:  '+JSON.stringify(event.result));
+                console.log('status:  '+event.status);
+
+                if(result.length != 0){
+                    var cols = [{"mDataProp":"Id","sTitle":"Account Id","defaultContent":""},{"mDataProp":"Name","sTitle":"Account Name","defaultContent":""}];                
+                    //var cols = [{"mDataProp":"CaseNumber","sTitle":"Account Name"}];
+                    console.log(JSON.stringify(cols));
+                    createDataTable("tblClass1",cols,result);
+                }else{
+                //$("div[id*=pgBlockMsg]").show();
+                }                              
+            }, 
+            {escape: true}
+            );           
+        }
+    
+    
+    
+    </script>
+    <apex:form >
+        <apex:outputPanel >
+            <apex:pageBlock >
+                <apex:pageBlockSection columns="1">                  
+                    <apex:pageBlockTable styleClass="tblClass1" value="{!accList}" var="acc">
+                    </apex:pageBlockTable>
+                   
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

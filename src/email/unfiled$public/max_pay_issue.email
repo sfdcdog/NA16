@@ -1,0 +1,3 @@
+Hello There!
+
+The max pay {!Position__c.Max_Pay__c} for the position {!Position__c.Name} created has exceeded million.

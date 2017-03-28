@@ -1,0 +1,16 @@
+<messaging:emailTemplate subject="High priority case details" recipientType="Contact" relatedToType="Case" >
+ <messaging:htmlEmailBody >        
+    <html>
+        <body>
+        <p>Hello {!recipient.name}--</p>
+        <p> The case priority has changed to: <b style="background-color:orange"> {!relatedTo.Priority} </b></p>
+      
+       
+        <p>Here is a list of the cases comments and case history records we currently have for Case {!relatedTo.caseNumber}:</p>
+        <br/>
+        <br/>
+          <c:Example_Visualforce_Component currentCaseId="{!relatedTo.id}"/>
+        </body>
+    </html>    
+ </messaging:htmlEmailBody>
+</messaging:emailTemplate>

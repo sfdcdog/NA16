@@ -1,0 +1,68 @@
+<apex:page controller="AccountSelectClassController" sidebar="false">
+    <apex:stylesheet value="{!URLFOR($Resource.Spinner, 'spinner.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Spinner, 'jquery.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Spinner, 'spinner.js')}"/>
+    <script type="text/javascript">
+        function selectAllCheckboxes(obj,receivedInputID){
+            var inputCheckBox = document.getElementsByTagName("input");
+            for(var i=0; i<inputCheckBox.length; i++){
+                if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){
+                    inputCheckBox[i].checked = obj.checked;
+                }
+            }
+        }
+    </script>
+    <div class="splashStatus" id="splashDiv">
+        <div class="circle"><img src="{!URLFOR($Resource.Spinner, 'spinner.gif')}"/></div>
+        <div class="txt">Please Wait. Loading...</div>
+    </div>
+    <apex:form >
+    
+        <apex:pageBlock id="yo">
+            <apex:pageBlockButtons >
+                
+               <!-- <apex:commandButton value="Show Selected Accounts" action="{!processSelected}" rerender="table2"/>-->
+                
+                <apex:commandButton value="Next Page" action="{!contactpage}" status="splashStatus"/>
+                <apex:actionStatus id="splashStatus" onstart="startSplash();" onstop="endSplash(); "/>
+            </apex:pageBlockButtons>
+                   
+                
+                    <apex:outputLabel >Search Account</apex:outputLabel>
+                     <apex:inputText value="{!searchText}"/>
+                        <apex:commandButton value="Search" action="{!searchAccounts}" rerender="yo" status="splashStatus"/>
+                    
+                 
+                       <apex:commandLink rendered="{!standardsetcon.hasprevious}" value="<<Previous |" action="{!standardsetcon.previous}" rerender="yo" />
+                    <apex:commandLink rendered="{!standardsetcon.hasnext}" value="| Next>>" action="{!standardsetcon.next}" rerender="yo" />
+                    
+                 
+                 <apex:pageblockSection title="All Accounts" collapsible="false" columns="2">
+                  
+                <apex:pageBlockTable value="{!paginated}" var="accWrap" id="table" title="All Accounts">
+                
+               
+                 <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!accWrap.selected}" id="inputId">
+                            <apex:actionsupport event="onclick" action="{!processSelected}" rerender="table2"/>
+                        </apex:inputCheckbox>
+                    </apex:column>
+                    
+                    <apex:column value="{!accWrap.acc.Name}" />
+                    
+                </apex:pageBlockTable>
+                             
+                <!--
+                <apex:pageBlockTable value="{!selectedAccounts}" var="c" id="table2" title="Selected Accounts">
+                    <apex:column value="{!c.Name}" headerValue="Account Name"/>
+                </apex:pageBlockTable>-->
+              </apex:pageblockSection>
+            
+            </apex:pageBlock>
+        
+    </apex:form>
+     <div class="lightbox"></div>
+</apex:page>

@@ -1,0 +1,22 @@
+<apex:page >
+    <script type="text/javascript">
+        function confirmation() {
+            var answer = confirm("Confirm submit?")
+            if (!answer) {
+                return false;
+            }
+        }
+    </script>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:selectcheckboxes layout="pageDirection">
+                    <apex:selectOption itemLabel="I Agree" itemValue="a" />
+                </apex:selectcheckboxes>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Submit" onclick="confirmation()" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

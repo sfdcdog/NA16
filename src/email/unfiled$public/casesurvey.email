@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="Survey for recent closed case" recipientType="Contact" relatedToType="Case">
+
+<messaging:htmlEmailBody >
+<p>Please use the link below to answer our survey</p>
+<a href="http://survey.clicktools.com/go?iv=3p3qpst2fwrq5"> click here</a>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,31 @@
+<apex:page >
+    <html>
+
+    <head>
+        <title>$scope vs scope</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+        <script src="text/javascript">
+        (function(){
+            angular.module('app', [])
+            .controller('TestCtrl', function($scope) {
+              console.log($scope)
+            })
+            .directive('testDirective', function() {
+              return {
+                link: function(scope) {
+                  console.log(scope)
+                }
+              }
+            })
+        }());
+        </script>
+    </head>
+
+    <body ng-app="app">
+        <div ng-controller="TestCtrl">
+            <test-directive></test-directive>
+        </div>
+    </body>
+
+    </html>
+</apex:page>

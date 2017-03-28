@@ -1,0 +1,14 @@
+<apex:page standardController="user_details__c" extensions="customSiteLoginController" showHeader="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pagemessages >
+            </apex:pagemessages>
+            <apex:pageBlockSection columns="1">
+                User Name :
+                <apex:inputText value="{!uName}" /> Password :
+                <apex:inputsecret value="{!pw}" />
+            </apex:pageBlockSection>
+            <apex:commandButton value="Signin" action="{!validateLogin}" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

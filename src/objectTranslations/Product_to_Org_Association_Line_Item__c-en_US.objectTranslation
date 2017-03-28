@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Map/Par Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Map/Par Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Map/Par Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Map/Par Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MAP/PAR --></label>
+        <name>MAP__c</name>
+        <relationshipLabel><!-- Map/Par Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>OPA_Product__c</name>
+        <relationshipLabel><!-- Map/Par Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- autoGrant --></label>
+        <name>autoGrant__c</name>
+    </fields>
+    <fields>
+        <label><!-- isParEnabled --></label>
+        <name>isParEnabled__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

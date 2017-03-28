@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RTP Convertor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RTP Convertors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case --></label>
+        <name>RTP_CaseLookup__c</name>
+        <relationshipLabel><!-- RTP Convertors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plain Comment --></label>
+        <name>RTP_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notetype --></label>
+        <name>RTP_Notetype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make Visible to External Users --></label>
+        <name>RTP_Public__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rich Comment --></label>
+        <name>RTP_Rich_Comment__c</name>
+    </fields>
+    <layouts>
+        <layout>Case RTF Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Case comment --></label>
+        <name>Case_comment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Example_Object1_forGlobalPicklistTest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Example_Object1_forGlobalPicklistTest</value>
+    </caseValues>
+    <fields>
+        <label><!-- Example_Testfor_GlobalPicklist --></label>
+        <name>Example_Testfor_GlobalPicklist__c</name>
+    </fields>
+    <layouts>
+        <layout>Example_Object1_forGlobalPicklistTest Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

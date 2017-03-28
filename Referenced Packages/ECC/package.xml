@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECC</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <namespacePrefix>ECCR</namespacePrefix>
+    <types>
+        <members>CodeCoverageReportController</members>
+        <members>CodeCoverageReportControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CodeCoverageReport</members>
+        <members>ExportCodeCoverageReport</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Code_Coverage_Analytic_Configuration__c.Value__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Code_Coverage_Analytic_Configuration__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Code_Coverage_Result</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>jquery</members>
+        <members>lightning</members>
+        <name>StaticResource</name>
+    </types>
+    <version>36.0</version>
+</Package>

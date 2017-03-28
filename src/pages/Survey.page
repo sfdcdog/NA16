@@ -1,0 +1,21 @@
+<apex:page standardController="Case" extensions="surveycontroller">
+  <apex:form >
+  <apex:pageblock >
+  <apex:pageBlockButtons location="bottom">
+      <apex:commandButton value="Submit" action="{!changestatus}" />
+  </apex:pageBlockButtons>
+  <apex:pageblockSection >
+  <apex:inputField value="{!case.question_1__c}"/>
+  
+  </apex:pageblockSection>
+  <apex:pageBlockSection >
+  <apex:selectRadio value="{!case.question_2__c}" title="Question 2" label="Question 2">
+      <apex:selectOption itemLabel="One" itemValue="One" />&nbsp;&nbsp;&nbsp;
+      <apex:selectOption itemValue="Two" itemLabel="Two" />&nbsp;&nbsp;&nbsp;
+      <apex:selectOption itemValue="Three" itemLabel="Three" />&nbsp;&nbsp;&nbsp;
+      
+  </apex:selectRadio>
+  </apex:pageBlockSection>
+  </apex:pageblock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Trigger Executions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Trigger Executions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>SI_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>SI_Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>SI_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>SI_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Events --></label>
+        <name>SI_Trigger_Events__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

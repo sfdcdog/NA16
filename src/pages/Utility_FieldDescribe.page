@@ -1,0 +1,57 @@
+<apex:page controller="Utility_Schema">
+    <script type='text/javascript'>
+    function noenter(ev)  {
+        if (window.event && window.event.keyCode == 13 || ev.which == 13) {
+            doSearchAF();
+            return false;
+        }else {
+            return true;
+        }
+    }
+    </script>
+    <apex:form id="f1">
+        <font color="red" size="4">To fetch formula fields on the object including formula schema....</font>
+        <apex:actionFunction name="doSearchAF" action="{!Describe_Function}" />
+        <apex:pageBlock mode="edit" id="pb2" title="">
+            <apex:pageblockSection columns="2">
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Object API Name  :" />
+                    <apex:inputText value="{!obj}" id="searchStr" styleclass="searchStr" onkeypress="return noenter(event);"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:commandButton action="{!Describe_Function}" value="Fetch formula field schema" status="theButton1" reRender="f1" />
+                </apex:pageblocksectionitem>
+            </apex:pageblockSection>
+            <apex:outputPanel style="color:#FF0000;font-weight:bold">
+                <center>
+                    <apex:actionStatus id="theButton1" startText="Searching......" />
+                </center>
+            </apex:outputPanel>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!errorfound}">
+            <apex:pageMessages ></apex:pageMessages>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!errorNotfound}">
+            <apex:pageBlockTable title="Field details" value="{!WrpList}" var="ca" rules="all" id="pb">
+                <apex:column Headervalue="Field Label" width="100px">
+                    <apex:outputText value="{!ca.label}" />
+                </apex:column>
+                <apex:column Headervalue="API Name" width="100px">
+                    <apex:outputText value="{!ca.apiname}" />
+                </apex:column>
+                <apex:column Headervalue="Field Id" width="100px">
+                    <apex:outputText value="{!ca.fieldId}" />
+                </apex:column>
+                <apex:column Headervalue="Formula">
+                    <apex:outputText value="{!ca.formula}" style="color:#0000FF;font-weight:" />
+                </apex:column>
+                <apex:column Headervalue="Type">
+                    <apex:outputText value="{!ca.type}" style="color:#0000FF;font-weight:" />
+                </apex:column>
+                <apex:column Headervalue="Relationship Name">
+                    <apex:outputText value="{!ca.relationshipname}" style="color:#0000FF;font-weight:" />
+                </apex:column>
+            </apex:pageblockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

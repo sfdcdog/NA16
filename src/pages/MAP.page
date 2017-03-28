@@ -1,0 +1,137 @@
+<apex:page controller="AccountSelectClassControllerR">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page
+  <!-- <apex:page controller="AccountSelectClassController" sidebar="false">
+    <script type="text/javascript">
+        function selectAllCheckboxes(obj,receivedInputID){
+            var inputCheckBox = document.getElementsByTagName("input");
+            for(var i=0; i<inputCheckBox.length; i++){
+                if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){
+                    inputCheckBox[i].checked = obj.checked;
+                }
+            }
+        }
+    </script>
+    <apex:form >
+    <apex:outputPanel id="totalPanel">
+        <apex:pageBlock id="pg1" rendered="{!showAccountFlag}">
+            <apex:pageBlockButtons >
+                
+              // COMMENT THIS//<apex:commandButton value="Show Selected Accounts" action="{!processSelected}" rerender="table2"/>//COMMENT THIS//
+                
+            <apex:commandButton value="Go to Contacts" action="{!contactpage}" disabled="{!IF(selectedProdType==null,true,false)}" reRender="totalPanel"/> //COMMENT THIS//disabled="{!flag}"//COMMENT THIS//
+            </apex:pageBlockButtons>
+                   
+                
+                <apex:outputLabel >Search Account</apex:outputLabel>
+                <apex:inputText value="{!searchText}"/>
+                <apex:commandButton value="Search" action="{!searchAccounts}" rerender="pg1"/>
+                 
+                     <apex:commandLink rendered="{!standardsetcon.hasprevious}" value="<<Previous |" action="{!standardsetcon.previous}" rerender="pg1" />
+                     <apex:commandLink rendered="{!standardsetcon.hasnext}" value="| Next>>" action="{!standardsetcon.next}" rerender="pg1" />
+  
+                 <apex:pageblockSection title="Accounts" collapsible="false" columns="2">
+                  
+                     <apex:pageBlockTable value="{!paginated}" var="accWrap" id="table" title="All Accounts">
+                
+               
+                         <apex:column >
+                            <apex:facet name="header">
+                                <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')"/>
+                            </apex:facet>
+                                <apex:inputCheckbox value="{!accWrap.selected}" id="inputId">
+                                    <apex:actionsupport event="onclick" action="{!processSelected}" rerender="table2"/>
+                                </apex:inputCheckbox>
+                        </apex:column>
+                    
+                        <apex:column value="{!accWrap.acc.Name}" />
+                    
+                    </apex:pageBlockTable>
+                    
+                     <apex:pageblockSectionItem id="selectType" > 
+                     <apex:selectradio value="{!selectedProdType}">
+                        <apex:selectOptions value="{!productTypes}"></apex:selectOptions>
+                        <apex:actionSupport event="onclick"  reRender="pg1"/>
+                    </apex:selectradio>
+                    
+                    <apex:selectlist value="{!selectedProdOrgType}" size="1" rendered="{!IF(selectedProdType=='Map',true,false)}">
+                        <apex:selectOptions value="{!prodOrgTypes}"></apex:selectOptions>
+                    </apex:selectlist>
+                    </apex:pageblockSectionItem>
+                    
+                //COMMENT THIS//
+                <apex:pageBlockTable value="{!selectedAccounts}" var="c" id="table2" title="Selected Accounts">
+                    <apex:column value="{!c.Name}" headerValue="Account Name"/>
+                </apex:pageBlockTable>//COMMENT THIS//
+                </apex:pageblockSection>
+            
+        </apex:pageBlock>
+        <apex:pageBlock id="pg2" rendered="{!showContactFlag}">
+         <apex:pageBlockButtons ><apex:commandButton value="Go to Products" action="{!productspage}" reRender="totalPanel"/>
+         <apex:commandButton value="Back to Accounts" action="{!backToAccountScreen}" reRender="totalPanel"/>
+         </apex:pageBlockButtons>
+                  
+         //COMMENT THIS// <apex:pageBlockButtons >
+               <apex:commandButton value="Next" action="{!contactList}" rerender="table containing products"/>
+            </apex:pageBlockButtons>//COMMENT THIS//
+               <apex:commandLink rendered="{!stdsetCon.hasprevious}" value="<<Previous |" action="{!stdsetCon.previous}" rerender="pg2" />
+                    <apex:commandLink rendered="{!stdsetCon.hasnext}" value="| Next>>" action="{!stdsetCon.next}" rerender="pg2" />
+                    
+                <apex:pageblockSection title="Contacts of the selected accounts" collapsible="false" columns="2">
+                   <apex:pageblockTable value="{!MyContacts}" var="con">
+                                 <apex:column >
+                                     <apex:facet name="header">
+                                      <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')"/>
+                                     </apex:facet>
+                                    <apex:inputcheckbox value="{!con.selected}" id="inputId1">
+                                        <apex:actionSupport event="onclick" action="{!processSelectedContacts}" rerender="something"/>
+                                    </apex:inputcheckbox>
+                                 </apex:column>
+                                 <apex:column value="{!con.con.Name}"/>
+                                 <apex:column value="{!con.con.Account.Name}"/>
+                             </apex:pageblockTable>
+                
+                
+                             
+        
+              //COMMENT THIS//<apex:pageBlockTable value="{!selectedAccounts}" var="c" id="table2" title="Selected Accounts">
+                    <apex:column value="{!c.Name}" headerValue="Account Name"/>
+                </apex:pageBlockTable>//COMMENT THIS//
+              </apex:pageblockSection>
+            
+            </apex:pageBlock>
+            <apex:pageBlock id="pg3" rendered="{!showProductFlag}">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Create Map" action="{!createMap}" rendered="{!IF(selectedProdType=='Map',true,false)}" disabled="{!IF(productList==NULL,true,false)}"/>
+                <apex:commandButton value="Create Par" action="{!createPARRequest}" rendered="{!IF(selectedProdType=='Par',true,false)}"/>
+                
+                <apex:commandButton value="Back to Contacts" action="{!backToContactScreen}" reRender="totalPanel"/>
+            </apex:pageBlockButtons>
+                <apex:outputLabel >Search Product</apex:outputLabel>
+                <apex:inputText value="{!searchTextProd}"/>
+                <apex:commandButton value="Search" action="{!searchProducts}" reRender="pg3"/>
+                <apex:commandLink rendered="{!standardSetproduct.hasprevious}" value="<<Previous |" action="{!standardSetproduct.previous}" rerender="pg3" />
+                    <apex:commandLink rendered="{!standardSetproduct.hasnext}" value="| Next>>" action="{!standardSetproduct.next}" rerender="pg3" />
+            <apex:pageBlockSection title="Products List">
+                <apex:pageBlockTable value="{!productList}" var="prod"> 
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')"/>
+                        </apex:facet>
+                        <apex:inputcheckbox value="{!prod.selected}" id="inputId2"/>
+                    </apex:column>
+                    <apex:column value="{!prod.prod.Name}"/>
+                    <apex:column headerValue="Product Organization" rendered="{!IF(selectedProdType=='Par',true,false)}">
+                        <apex:selectList value="{!prod.selectedProductOrganization}" size="1">
+                            <apex:selectOptions value="{!prod.prodOrgs}"/>
+                        </apex:selectList>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+            </apex:outputPanel>
+    </apex:form>
+ 
+</apex:page> -->
+</apex:page>

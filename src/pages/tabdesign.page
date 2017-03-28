@@ -1,0 +1,25 @@
+<apex:page showHeader="true" tabStyle="account" controller="tryTabs" >
+
+ 
+
+        <!-- Define Tab panel .css styles -->
+        <style>0
+                .activeTab {background-color: #236FBD; color:white; background-image:none}
+                .inactiveTab { background-color: lightgrey; color:black; background-image:none}
+        </style>
+
+ 
+
+        <!-- Create Tab panel -->
+
+        <apex:tabPanel switchType="client" selectedTab="name2" id="AccountTabPanel"
+
+                                  tabClass="activeTab" inactiveTabClass="inactiveTab" value="{!whichTab}" >
+
+                <apex:tab label="One" name="name1" id="tabOne">content for tab one</apex:tab>
+
+                <apex:tab label="Two" name="name2" id="tabTwo">content for tab two</apex:tab>
+
+        </apex:tabPanel>
+
+</apex:page>

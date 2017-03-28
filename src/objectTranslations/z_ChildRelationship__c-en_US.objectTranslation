@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ChildRelation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ChildRelations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Child SObject Name --></label>
+        <name>childobjectname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filed Name --></label>
+        <name>fieldname__c</name>
+    </fields>
+    <fields>
+        <label><!-- isCascadeDelete --></label>
+        <name>isCascadeDelete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child SObject --></label>
+        <name>z_ChildSObjectDescription__c</name>
+        <relationshipLabel><!-- ChildRelations (z_ChildSObjectDescription) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent SObject --></label>
+        <name>z_ParentSObjectDescription__c</name>
+        <relationshipLabel><!-- ChildRelations (z_ParentSObjectDescription) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>z_ChildRelationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

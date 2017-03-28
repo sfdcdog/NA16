@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AWS_Key</fullName>
+        <categories>AWS; S3</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Holds AWS Key</shortDescription>
+        <value>AKIAIKJSVD5TKS6D26XQ</value>
+    </labels>
+    <labels>
+        <fullName>AWS_Secret</fullName>
+        <categories>AWS; S3</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Holds AWS Secret</shortDescription>
+        <value>zoSW9EL/nuRhpWFnIeCbaG7u2IF0GaR5OBJukiKc</value>
+    </labels>
+    <labels>
+        <fullName>Internal_Profile_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Internal Profile Name</shortDescription>
+        <value>System Administrator</value>
+    </labels>
+    <labels>
+        <fullName>Profile_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Profile Name</shortDescription>
+        <value>Customer Community Plus Login User Clone</value>
+    </labels>
+    <labels>
+        <fullName>pagesizes</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This holds the page sizes for Household page</shortDescription>
+        <value>5;10;15</value>
+    </labels>
+    <labels>
+        <fullName>z_DumpBtn</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>z_DumpBtn</shortDescription>
+        <value>Snapshot</value>
+    </labels>
+    <labels>
+        <fullName>z_FAILURE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>z_FAILURE</shortDescription>
+        <value>You have to fix error/s before reviewing  object metadata.</value>
+    </labels>
+    <labels>
+        <fullName>z_Message1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>z_Message1</shortDescription>
+        <value>Please check enough disk to store metadata before snapshot. In case your org is Developer Edition, please reduce target objects at Setting tab. You need 4.5MB to store all object metadata info of default org</value>
+    </labels>
+    <labels>
+        <fullName>z_Message2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>z_Message2</shortDescription>
+        <value>This application overwrites object metadata records after execute the snapshot. If you need to save previous metadata info, please export data to csv or xsl via report or to another custom object via Analytic Sanpshot</value>
+    </labels>
+    <labels>
+        <fullName>z_Message3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>z_Message3</shortDescription>
+        <value>Please wait for around 10 mins without closing this page until you will see SObjects Metadata have been created message after the completion and do not press SnapShot button twice.</value>
+    </labels>
+    <labels>
+        <fullName>z_MetadataDump</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>z_MetadataDump</shortDescription>
+        <value>Snapshot Console</value>
+    </labels>
+    <labels>
+        <fullName>z_Progress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>z_Progress</shortDescription>
+        <value>Progress</value>
+    </labels>
+    <labels>
+        <fullName>z_SUCCESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>z_SUCCESS</shortDescription>
+        <value>Success!!
+Please click SObject tab to check created sobject metadata records.</value>
+    </labels>
+    <labels>
+        <fullName>z_Warning</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>z_Warning</shortDescription>
+        <value>You need to prepare setting. Please click Settings tab.</value>
+    </labels>
+</CustomLabels>

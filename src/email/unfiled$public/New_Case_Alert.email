@@ -1,0 +1,14 @@
+<messaging:emailTemplate subject="New Case has been created." recipientType="User" relatedToType="Case">
+<messaging:htmlEmailBody >
+
+Dear 
+
+<!--{!relatedTo.Owner.name}-->
+
+Case {!relatedTo.casenumber} has been assigned to you. Please click on the link below to view the record.
+
+https://na16.salesforce.com/{!relatedTo.id}
+
+</messaging:htmlEmailBody>
+
+</messaging:emailTemplate>

@@ -1,0 +1,24 @@
+<apex:page controller="Example_csvFileReaderController">
+    <apex:form >
+        <!-- csv reader demo -->
+        <apex:pageBlock >
+         <apex:pageBlockSection rendered="{!fileError}">
+                <apex:pagemessages >
+                </apex:pagemessages>
+            </apex:pageBlockSection>
+            <apex:panelGrid columns="2">
+                <apex:inputFile value="{!csvFileBody}" filename="{!csvAsString}" />
+                <apex:commandButton value="Read csv" action="{!readcsvFile}" />
+            </apex:panelGrid>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!fileError}">           
+                <apex:pageblocktable value="{!sObjectList}" var="rec">
+                    <apex:column value="{!rec.name}" />
+                    <apex:column value="{!rec.AccountNumber}" />
+                    <apex:column value="{!rec.Accountsource}" />
+                    <apex:column value="{!rec.Type}" />
+                    <apex:column value="{!rec.Website}" />
+                </apex:pageblocktable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,22 @@
+<apex:page id="mypage" standardController="case" extensions="Core_IPS_AddCommentController" sidebar="false" showHeader="false" tabStyle="Case" >
+
+<apex:includeScript value="{!URLFOR($Resource.TinyMce, '/tinymce/tinymce.js')}"/>
+
+ 
+    <apex:form >
+
+
+        <apex:pageBlock > <!--rendered="{!ShowAddComments}"-->
+         
+            <apex:actionRegion >              
+                <apex:pageBlockSection columns="1" >              
+                        <apex:inputtextarea id="textareaDescription" value="{!textarea}"  richText="true" style="width:500%" label=""/>
+                    <!--<apex:inputfield value="{!newCase.Core_IPS_Comment__c}" required="true" style="width:1050px; height:10 px" label=""/>-->          
+                </apex:pageBlockSection>
+            </apex:actionRegion>
+               
+              
+          
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

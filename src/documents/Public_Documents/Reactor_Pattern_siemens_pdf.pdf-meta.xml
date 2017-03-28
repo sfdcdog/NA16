@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is a PDF about Reactor Pattern usage in Apex.</description>
+    <internalUseOnly>false</internalUseOnly>
+    <keywords>Reactor Pattern,</keywords>
+    <name>Reactor Pattern - siemens.pdf</name>
+    <public>false</public>
+</Document>
