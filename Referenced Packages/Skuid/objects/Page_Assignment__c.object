@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -67,40 +63,42 @@
         <externalId>false</externalId>
         <inlineHelpText>The Salesforce action type(s) to which this Page Assignment applies</inlineHelpText>
         <label>Action Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Tab</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>List</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>View</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Edit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Delete</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Clone</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Tab</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>List</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>View</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Edit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Delete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Clone</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Assigned_To_User__c</fullName>

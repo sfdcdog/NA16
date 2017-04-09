@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable">
+	<div class="white">
+		Hello Html!!	
+	</div>
+	<h2> Check out thr style in this list</h2>
+	<ul>
+		<li class="red"> This is Red</li>
+		<li class="blue"> This is Blue</li>
+		<li class="green"> This is Green</li>	
+	</ul>
+</aura:component>

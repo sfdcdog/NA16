@@ -432,6 +432,7 @@
         <field>Personalization_Settings__c.User__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
     <label>Skuid Page Viewer</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>

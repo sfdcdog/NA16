@@ -309,6 +309,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Enterprise_ServiceLayer_CaseHandling</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Example_AngularJSController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -646,6 +650,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Utility_SobjectDescribe_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Utility_TimeZoneMap</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
