@@ -309,6 +309,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Enterprise_ServiceLayer_CaseHandling</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Example_AngularJSController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -646,6 +650,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Utility_SobjectDescribe_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Utility_TimeZoneMap</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -4197,6 +4205,7 @@
         <field>z_SchemaTemp__c.objname__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
     <label>Test</label>
     <pageAccesses>
         <apexPage>AWS_Explorer</apexPage>

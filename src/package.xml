@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>*</members>
@@ -11,6 +11,10 @@
     <types>
         <members>*</members>
         <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTestSuite</name>
     </types>
     <types>
         <members>*</members>
@@ -29,6 +33,10 @@
         <members>Case.Standard</members>
         <members>Lead.Standard</members>
         <name>AssignmentRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AuraDefinitionBundle</name>
     </types>
     <types>
         <members>*</members>
@@ -63,7 +71,6 @@
         <name>CustomMetadata</name>
     </types>
     <types>
-        <members>*</members>
         <members>Account</members>
         <members>AccountCleanInfo</members>
         <members>AccountContactRelation</members>
@@ -159,6 +166,7 @@
         <members>WorkRewardFund</members>
         <members>WorkRewardFundType</members>
         <members>WorkThanks</members>
+        <members>*</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -192,16 +200,9 @@
         <name>DataCategoryGroup</name>
     </types>
     <types>
-        <members>ConnectedApp_Resources</members>
-        <members>ConnectedApp_Resources/TemporaryLogoName1.png</members>
+        <members>Logos</members>
+        <members>Logos/awslogo.gif</members>
         <members>Graphics_Pack_for_Formulas</members>
-        <members>Graphics_Pack_for_Formulas/Butterfly_16x16_png.png</members>
-        <members>Graphics_Pack_for_Formulas/Dolphin_16x16_png.png</members>
-        <members>Graphics_Pack_for_Formulas/Elephant_16x16_png.png</members>
-        <members>Graphics_Pack_for_Formulas/Hippopotamus_16x16_png.png</members>
-        <members>Graphics_Pack_for_Formulas/Panda_16x16_png.png</members>
-        <members>Graphics_Pack_for_Formulas/Plant_png.png</members>
-        <members>Graphics_Pack_for_Formulas/Turtle_16x16_png.png</members>
         <members>Graphics_Pack_for_Formulas/accept_png.png</members>
         <members>Graphics_Pack_for_Formulas/accept_png1.png</members>
         <members>Graphics_Pack_for_Formulas/accessories_calculator_png.png</members>
@@ -372,6 +373,7 @@
         <members>Graphics_Pack_for_Formulas/bullet_white_png.png</members>
         <members>Graphics_Pack_for_Formulas/bullet_wrench_png.png</members>
         <members>Graphics_Pack_for_Formulas/bullet_yellow_png.png</members>
+        <members>Graphics_Pack_for_Formulas/Butterfly_16x16_png.png</members>
         <members>Graphics_Pack_for_Formulas/butterfly_png.png</members>
         <members>Graphics_Pack_for_Formulas/bv_png.png</members>
         <members>Graphics_Pack_for_Formulas/bw_png.png</members>
@@ -527,6 +529,7 @@
         <members>Graphics_Pack_for_Formulas/do_png.png</members>
         <members>Graphics_Pack_for_Formulas/document_signature_png.png</members>
         <members>Graphics_Pack_for_Formulas/dog_png.png</members>
+        <members>Graphics_Pack_for_Formulas/Dolphin_16x16_png.png</members>
         <members>Graphics_Pack_for_Formulas/door_open_png.png</members>
         <members>Graphics_Pack_for_Formulas/door_png.png</members>
         <members>Graphics_Pack_for_Formulas/draw_calligraphic_png.png</members>
@@ -559,6 +562,7 @@
         <members>Graphics_Pack_for_Formulas/ee_png.png</members>
         <members>Graphics_Pack_for_Formulas/eg_png.png</members>
         <members>Graphics_Pack_for_Formulas/eh_png.png</members>
+        <members>Graphics_Pack_for_Formulas/Elephant_16x16_png.png</members>
         <members>Graphics_Pack_for_Formulas/email_open_png.png</members>
         <members>Graphics_Pack_for_Formulas/email_open_png1.png</members>
         <members>Graphics_Pack_for_Formulas/email_png.png</members>
@@ -698,6 +702,7 @@
         <members>Graphics_Pack_for_Formulas/help_browser_png.png</members>
         <members>Graphics_Pack_for_Formulas/help_png.png</members>
         <members>Graphics_Pack_for_Formulas/help_png1.png</members>
+        <members>Graphics_Pack_for_Formulas/Hippopotamus_16x16_png.png</members>
         <members>Graphics_Pack_for_Formulas/hk_png.png</members>
         <members>Graphics_Pack_for_Formulas/hm_png.png</members>
         <members>Graphics_Pack_for_Formulas/hn_png.png</members>
@@ -925,6 +930,7 @@
         <members>Graphics_Pack_for_Formulas/paintcan_png1.png</members>
         <members>Graphics_Pack_for_Formulas/palette_png.png</members>
         <members>Graphics_Pack_for_Formulas/palette_png1.png</members>
+        <members>Graphics_Pack_for_Formulas/Panda_16x16_png.png</members>
         <members>Graphics_Pack_for_Formulas/parrot_png.png</members>
         <members>Graphics_Pack_for_Formulas/paste_plain_png.png</members>
         <members>Graphics_Pack_for_Formulas/pe_png.png</members>
@@ -952,6 +958,7 @@
         <members>Graphics_Pack_for_Formulas/pill_png1.png</members>
         <members>Graphics_Pack_for_Formulas/pk_png.png</members>
         <members>Graphics_Pack_for_Formulas/pl_png.png</members>
+        <members>Graphics_Pack_for_Formulas/Plant_png.png</members>
         <members>Graphics_Pack_for_Formulas/plugin_disabled_png.png</members>
         <members>Graphics_Pack_for_Formulas/plugin_png.png</members>
         <members>Graphics_Pack_for_Formulas/plugin_png1.png</members>
@@ -1199,6 +1206,7 @@
         <members>Graphics_Pack_for_Formulas/travel_png.png</members>
         <members>Graphics_Pack_for_Formulas/tree_png.png</members>
         <members>Graphics_Pack_for_Formulas/tt_png.png</members>
+        <members>Graphics_Pack_for_Formulas/Turtle_16x16_png.png</members>
         <members>Graphics_Pack_for_Formulas/tux_png.png</members>
         <members>Graphics_Pack_for_Formulas/tux_png1.png</members>
         <members>Graphics_Pack_for_Formulas/tv_png.png</members>
@@ -1301,14 +1309,12 @@
         <members>Graphics_Pack_for_Formulas/zoom_png.png</members>
         <members>Graphics_Pack_for_Formulas/zoom_png1.png</members>
         <members>Graphics_Pack_for_Formulas/zw_png.png</members>
+        <members>Public_Documents</members>
+        <members>Public_Documents/Apex_Design_Patterns_Singleton.pdf</members>
+        <members>Public_Documents/Reactor_Pattern_siemens_pdf.pdf</members>
+        <members>Public_Documents/Research_Topics_Covered_Apr_03_2016.txt</members>
+        <members>Public_Documents/Research_Topics_Covered_Apr_24_2016.txt</members>
         <members>Graphics_Pack_for_Tabs</members>
-        <members>Graphics_Pack_for_Tabs/Butterfly_32x32_png.png</members>
-        <members>Graphics_Pack_for_Tabs/Dolphin_32x32_png.png</members>
-        <members>Graphics_Pack_for_Tabs/Elephant_32x32_png.png</members>
-        <members>Graphics_Pack_for_Tabs/Hippopotamus_32x32_png.png</members>
-        <members>Graphics_Pack_for_Tabs/Panda_32x32_png.png</members>
-        <members>Graphics_Pack_for_Tabs/Plant_png1.png</members>
-        <members>Graphics_Pack_for_Tabs/Turtle_32x32_png.png</members>
         <members>Graphics_Pack_for_Tabs/accept_png2.png</members>
         <members>Graphics_Pack_for_Tabs/accessories_calculator_png1.png</members>
         <members>Graphics_Pack_for_Tabs/accessories_character_map_png1.png</members>
@@ -1372,6 +1378,7 @@
         <members>Graphics_Pack_for_Tabs/bricks_png2.png</members>
         <members>Graphics_Pack_for_Tabs/briefcase_png2.png</members>
         <members>Graphics_Pack_for_Tabs/bug_png2.png</members>
+        <members>Graphics_Pack_for_Tabs/Butterfly_32x32_png.png</members>
         <members>Graphics_Pack_for_Tabs/butterfly_png1.png</members>
         <members>Graphics_Pack_for_Tabs/cake_png2.png</members>
         <members>Graphics_Pack_for_Tabs/calculator_black_png1.png</members>
@@ -1437,6 +1444,7 @@
         <members>Graphics_Pack_for_Tabs/disk_png2.png</members>
         <members>Graphics_Pack_for_Tabs/document_signature_png1.png</members>
         <members>Graphics_Pack_for_Tabs/dog_png1.png</members>
+        <members>Graphics_Pack_for_Tabs/Dolphin_32x32_png.png</members>
         <members>Graphics_Pack_for_Tabs/draw_calligraphic_png1.png</members>
         <members>Graphics_Pack_for_Tabs/draw_convolve_png1.png</members>
         <members>Graphics_Pack_for_Tabs/draw_polygon_png1.png</members>
@@ -1455,6 +1463,7 @@
         <members>Graphics_Pack_for_Tabs/edit_redo_png1.png</members>
         <members>Graphics_Pack_for_Tabs/edit_undo_png1.png</members>
         <members>Graphics_Pack_for_Tabs/education_png1.png</members>
+        <members>Graphics_Pack_for_Tabs/Elephant_32x32_png.png</members>
         <members>Graphics_Pack_for_Tabs/email_open_png2.png</members>
         <members>Graphics_Pack_for_Tabs/email_png2.png</members>
         <members>Graphics_Pack_for_Tabs/emblem_favorite_png1.png</members>
@@ -1534,6 +1543,7 @@
         <members>Graphics_Pack_for_Tabs/heart_png2.png</members>
         <members>Graphics_Pack_for_Tabs/help_browser_png1.png</members>
         <members>Graphics_Pack_for_Tabs/help_png2.png</members>
+        <members>Graphics_Pack_for_Tabs/Hippopotamus_32x32_png.png</members>
         <members>Graphics_Pack_for_Tabs/holly_png1.png</members>
         <members>Graphics_Pack_for_Tabs/horoscopes_png1.png</members>
         <members>Graphics_Pack_for_Tabs/hourglass_png2.png</members>
@@ -1628,6 +1638,7 @@
         <members>Graphics_Pack_for_Tabs/paintbrush_png2.png</members>
         <members>Graphics_Pack_for_Tabs/paintcan_png2.png</members>
         <members>Graphics_Pack_for_Tabs/palette_png2.png</members>
+        <members>Graphics_Pack_for_Tabs/Panda_32x32_png.png</members>
         <members>Graphics_Pack_for_Tabs/parrot_png1.png</members>
         <members>Graphics_Pack_for_Tabs/paste_plain_png1.png</members>
         <members>Graphics_Pack_for_Tabs/peacock_png1.png</members>
@@ -1643,6 +1654,7 @@
         <members>Graphics_Pack_for_Tabs/pictures_png1.png</members>
         <members>Graphics_Pack_for_Tabs/pie_chart_png1.png</members>
         <members>Graphics_Pack_for_Tabs/pill_png2.png</members>
+        <members>Graphics_Pack_for_Tabs/Plant_png1.png</members>
         <members>Graphics_Pack_for_Tabs/plugin_png2.png</members>
         <members>Graphics_Pack_for_Tabs/poker_png1.png</members>
         <members>Graphics_Pack_for_Tabs/preferences_desktop_accessibility_png1.png</members>
@@ -1762,6 +1774,7 @@
         <members>Graphics_Pack_for_Tabs/transmit_png2.png</members>
         <members>Graphics_Pack_for_Tabs/travel_png1.png</members>
         <members>Graphics_Pack_for_Tabs/tree_png1.png</members>
+        <members>Graphics_Pack_for_Tabs/Turtle_32x32_png.png</members>
         <members>Graphics_Pack_for_Tabs/tux_png2.png</members>
         <members>Graphics_Pack_for_Tabs/twitter_2_png1.png</members>
         <members>Graphics_Pack_for_Tabs/umbrella_32x32_png.png</members>
@@ -1816,18 +1829,14 @@
         <members>Graphics_Pack_for_Tabs/x_office_presentation_png1.png</members>
         <members>Graphics_Pack_for_Tabs/x_office_spreadsheet_png1.png</members>
         <members>Graphics_Pack_for_Tabs/zoom_png2.png</members>
-        <members>Logos</members>
-        <members>Logos/awslogo.gif</members>
-        <members>Public_Documents</members>
-        <members>Public_Documents/Apex_Design_Patterns_Singleton.pdf</members>
-        <members>Public_Documents/Reactor_Pattern_siemens_pdf.pdf</members>
-        <members>Public_Documents/Research_Topics_Covered_Apr_03_2016.txt</members>
-        <members>Public_Documents/Research_Topics_Covered_Apr_24_2016.txt</members>
+        <members>ConnectedApp_Resources</members>
+        <members>ConnectedApp_Resources/TemporaryLogoName1.png</members>
         <name>Document</name>
     </types>
     <types>
         <members>unfiled$public</members>
         <members>unfiled$public/AcceptanceEmail</members>
+        <members>unfiled$public/casesurvey</members>
         <members>unfiled$public/CommunityChangePasswordEmailTemplate</members>
         <members>unfiled$public/CommunityForgotPasswordEmailTemplate</members>
         <members>unfiled$public/CommunityWelcomeEmailTemplate</members>
@@ -1838,13 +1847,12 @@
         <members>unfiled$public/Example_VisualForce_EmailTemplate</members>
         <members>unfiled$public/InvitationEmail</members>
         <members>unfiled$public/MarketingProductInquiryResponse</members>
+        <members>unfiled$public/max_pay_issue</members>
         <members>unfiled$public/New_Case_Alert</members>
+        <members>unfiled$public/prioritychangenotification</members>
         <members>unfiled$public/Recruiting_App_New_Position_Alert</members>
         <members>unfiled$public/Recrutign_App_New_Position_requires_Approval</members>
         <members>unfiled$public/RejectionEmail</members>
-        <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
-        <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
-        <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE</members>
         <members>unfiled$public/SalesNewCustomerEmail</members>
         <members>unfiled$public/SupportCaseAssignmentNotification</members>
         <members>unfiled$public/SupportCaseCreatedPhoneInquiries</members>
@@ -1852,12 +1860,12 @@
         <members>unfiled$public/SupportCaseResponse</members>
         <members>unfiled$public/SupportEscalatedCaseNotification</members>
         <members>unfiled$public/SupportEscalatedCaseReassignment</members>
+        <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
         <members>unfiled$public/SupportSelfServiceNewLoginandPassword</members>
+        <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
         <members>unfiled$public/SupportSelfServiceResetPassword</members>
+        <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE</members>
         <members>unfiled$public/UpdateConnEmail</members>
-        <members>unfiled$public/casesurvey</members>
-        <members>unfiled$public/max_pay_issue</members>
-        <members>unfiled$public/prioritychangenotification</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -1945,6 +1953,8 @@
         <name>QuickAction</name>
     </types>
     <types>
+        <members>animals_http</members>
+        <members>animals_soap</members>
         <members>ApexDevNet</members>
         <members>EC2</members>
         <members>NA31_Dev_Org</members>
@@ -1952,24 +1962,22 @@
         <members>S3_SFDC_Attachments</members>
         <members>Tooling_API</members>
         <members>WebServicexStocks</members>
-        <members>animals_http</members>
-        <members>animals_soap</members>
         <name>RemoteSiteSetting</name>
     </types>
     <types>
         <members>Assignment_Groups</members>
         <members>Assignment_Groups/Assigned_Queues</members>
         <members>Assignment_Groups/Assignment_Group_Member_by_Status</members>
+        <members>folder_test</members>
+        <members>folder_test/MATRIX_TEST</members>
+        <members>folder_test/Positions_by_Functional_Area_and_Region</members>
+        <members>unfiled$public</members>
         <members>Recruting_Reports</members>
         <members>Recruting_Reports/Avg_time_to_hire_with_and_without_travel</members>
         <members>Recruting_Reports/Employee_Interviewers</members>
         <members>Recruting_Reports/Job_Applications_by_Functional_Area</members>
         <members>Recruting_Reports/Open_Positions_by_Functional_Area</members>
         <members>Recruting_Reports/positions_open_for_more_than_90_days</members>
-        <members>folder_test</members>
-        <members>folder_test/MATRIX_TEST</members>
-        <members>folder_test/Positions_by_Functional_Area_and_Region</members>
-        <members>unfiled$public</members>
         <name>Report</name>
     </types>
     <types>
@@ -1987,6 +1995,10 @@
     <types>
         <members>*</members>
         <name>Scontrol</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Settings</name>
     </types>
     <types>
         <members>*</members>
@@ -2012,9 +2024,5 @@
         <members>*</members>
         <name>Workflow</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>Settings</name>
-    </types>
-    <version>36.0</version>
+    <version>38.0</version>
 </Package>

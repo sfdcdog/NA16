@@ -328,6 +328,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Enterprise_ServiceLayer_CaseHandling</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Example_AngularJSController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -665,6 +669,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Utility_SobjectDescribe_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Utility_TimeZoneMap</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -6354,6 +6362,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-UserProvisioningRequest</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-WorkBadge</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -6372,6 +6384,14 @@
     <tabVisibilities>
         <tab>standard-WorkPerformanceCycle</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-WorkRewardFund</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-WorkRewardFundType</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>user_details__c</tab>

@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -61,52 +57,69 @@
         <description>This is for testing Field Dependencies</description>
         <externalId>false</externalId>
         <label>Example_Testfor_FieldDependencies2</label>
-        <picklist>
-            <controllingField>Example_Testfor_RecordType_Picklist__c</controllingField>
-            <picklistValues>
-                <fullName>TestX1</fullName>
-                <default>true</default>
-                <controllingFieldValues>Test2</controllingFieldValues>
-                <controllingFieldValues>Test4</controllingFieldValues>
-                <controllingFieldValues>Test5</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TestX2</fullName>
-                <default>false</default>
-                <controllingFieldValues>Test1</controllingFieldValues>
-                <controllingFieldValues>Test2</controllingFieldValues>
-                <controllingFieldValues>Test4</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TestX3</fullName>
-                <default>false</default>
-                <controllingFieldValues>Test1</controllingFieldValues>
-                <controllingFieldValues>Test2</controllingFieldValues>
-                <controllingFieldValues>Test3</controllingFieldValues>
-                <controllingFieldValues>Test4</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TestX4</fullName>
-                <default>false</default>
-                <controllingFieldValues>Test1</controllingFieldValues>
-                <controllingFieldValues>Test2</controllingFieldValues>
-                <controllingFieldValues>Test3</controllingFieldValues>
-                <controllingFieldValues>Test5</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TestX5</fullName>
-                <default>false</default>
-                <controllingFieldValues>Test2</controllingFieldValues>
-                <controllingFieldValues>Test3</controllingFieldValues>
-                <controllingFieldValues>Test5</controllingFieldValues>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Example_Testfor_RecordType_Picklist__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>TestX1</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>TestX2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TestX3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TestX4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TestX5</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Test1</controllingFieldValue>
+                <controllingFieldValue>Test2</controllingFieldValue>
+                <controllingFieldValue>Test4</controllingFieldValue>
+                <valueName>TestX2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Test1</controllingFieldValue>
+                <controllingFieldValue>Test2</controllingFieldValue>
+                <controllingFieldValue>Test3</controllingFieldValue>
+                <controllingFieldValue>Test4</controllingFieldValue>
+                <valueName>TestX3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Test1</controllingFieldValue>
+                <controllingFieldValue>Test2</controllingFieldValue>
+                <controllingFieldValue>Test3</controllingFieldValue>
+                <controllingFieldValue>Test5</controllingFieldValue>
+                <valueName>TestX4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Test2</controllingFieldValue>
+                <controllingFieldValue>Test4</controllingFieldValue>
+                <controllingFieldValue>Test5</controllingFieldValue>
+                <valueName>TestX1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Test2</controllingFieldValue>
+                <controllingFieldValue>Test3</controllingFieldValue>
+                <controllingFieldValue>Test5</controllingFieldValue>
+                <valueName>TestX5</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Example_Testfor_FieldDependencies__c</fullName>
@@ -123,33 +136,35 @@
         <description>This contains data for testing picklist field availability in Record Type</description>
         <externalId>false</externalId>
         <label>Example_Testfor_RecordType_Picklist</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Test1</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Test1</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Test2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test5</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>Example_TestObjectfor_ConfigChanges</label>
     <listViews>

@@ -27,6 +27,8 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>jesse.roshan716@gmail.com</emailAddress>
+            <emailServicesAddress>jesse.roshan716@2t2e2tz0sg2lvpaiobgnnd00fzretp2p3ahgl7a6rs93iu9u2l.j-jzhvea4.na16.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
             <routingName>Customer support</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
         </routingAddresses>

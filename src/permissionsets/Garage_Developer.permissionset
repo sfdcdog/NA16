@@ -309,6 +309,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Enterprise_ServiceLayer_CaseHandling</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Example_AngularJSController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -646,6 +650,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Utility_SobjectDescribe_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Utility_TimeZoneMap</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -4198,7 +4206,9 @@
         <field>z_SchemaTemp__c.objname__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
     <label>Garage Developer</label>
+    <license>Salesforce</license>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -5096,5 +5106,4 @@
         <tab>z_SObjectDescription__c</tab>
         <visibility>None</visibility>
     </tabSettings>
-    <userLicense>Salesforce</userLicense>
 </PermissionSet>

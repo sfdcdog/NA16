@@ -66,6 +66,7 @@ required travel?</description>
     <filter>
         <criteriaItems>
             <column>Position__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Open-Approved,Closed-Filled</value>
         </criteriaItems>

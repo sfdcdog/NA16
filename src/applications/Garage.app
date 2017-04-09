@@ -5,6 +5,7 @@
 
 Create a simple garage manager app using the Force.com App Quick Start Wizard
 Using the App Quick Start Wizard, create an app named &apos;Garage&apos; whose main type of data will be &apos;Vehicle&apos;</description>
+    <formFactors>Large</formFactors>
     <label>Garage</label>
     <tab>standard-Chatter</tab>
     <tab>standard-File</tab>

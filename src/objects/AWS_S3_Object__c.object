@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -60,25 +56,27 @@
         <fullName>Access__c</fullName>
         <externalId>false</externalId>
         <label>Access</label>
-        <picklist>
-            <picklistValues>
-                <fullName>FULL_CONTROL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>public-read</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>WRITE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FULL_CONTROL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>public-read</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>WRITE</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Bucket_Name__c</fullName>
@@ -95,45 +93,47 @@
         <fullName>Content_Type__c</fullName>
         <externalId>false</externalId>
         <label>Content Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>image/gif</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>image/jpeg</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>image/png</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>text/html</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>text/plain</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>gif</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>pdf</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>jpg</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>image/gif</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>image/jpeg</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>image/png</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>text/html</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>text/plain</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>gif</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>pdf</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>jpg</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>File_Name__c</fullName>

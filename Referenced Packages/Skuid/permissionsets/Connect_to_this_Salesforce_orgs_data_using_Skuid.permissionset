@@ -432,6 +432,7 @@
         <field>Personalization_Settings__c.User__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
     <label>Connect to this Salesforce org&apos;s data using Skuid</label>
     <pageAccesses>
         <apexPage>ClonePage</apexPage>

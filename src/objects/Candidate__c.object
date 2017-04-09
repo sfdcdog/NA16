@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -114,34 +110,36 @@
         <fullName>Education__c</fullName>
         <externalId>false</externalId>
         <label>Education</label>
-        <picklist>
-            <picklistValues>
-                <fullName>HS Diploma</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BA/BS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MA/MS/MBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ph.D.</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Post Doc</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HS Diploma</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BA/BS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MA/MS/MBA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ph.D.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Post Doc</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Email__c</fullName>
