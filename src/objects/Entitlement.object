@@ -17,10 +17,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -106,17 +102,6 @@
     </fields>
     <fields>
         <fullName>Type</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Phone Support</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Support</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>

@@ -3,9 +3,6 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>RoleInTerritory2</fullName>
-        <picklist>
-            <sorted>false</sorted>
-        </picklist>
         <type>Picklist</type>
     </fields>
 </CustomObject>

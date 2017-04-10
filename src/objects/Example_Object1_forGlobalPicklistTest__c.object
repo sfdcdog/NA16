@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -60,12 +56,15 @@
         <fullName>Example_Testfor_GlobalPicklist__c</fullName>
         <description>This is for Test  purposes</description>
         <externalId>false</externalId>
-        <globalPicklist>Example_Picklist_1</globalPicklist>
         <label>Example_Testfor_GlobalPicklist</label>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Example_Picklist_1</valueSetName>
+        </valueSet>
     </fields>
     <label>Example_Object1_forGlobalPicklistTest</label>
     <listViews>

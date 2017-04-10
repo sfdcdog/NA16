@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -59,36 +55,38 @@
         <fullName>Account__c</fullName>
         <externalId>false</externalId>
         <label>Account</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Hitachi</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>LG</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Samsung</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sony Corp</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Toshiba</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ANY</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hitachi</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LG</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Samsung</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sony Corp</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Toshiba</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ANY</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>5</visibleLines>
     </fields>
     <fields>
@@ -123,48 +121,52 @@
         <fullName>Products__c</fullName>
         <externalId>false</externalId>
         <label>Products</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Vaio</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Saber</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Walkman</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ANY</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Vaio</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Saber</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Walkman</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ANY</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Queue_ID__c</fullName>
         <externalId>false</externalId>
         <label>Queue ID</label>
-        <picklist>
-            <picklistValues>
-                <fullName>00Gj0000001HRAlEAO</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>00Gj0000001HX7sEAG</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>00Gj0000001HRAlEAO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>00Gj0000001HX7sEAG</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Queue_Name__c</fullName>

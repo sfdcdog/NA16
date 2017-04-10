@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -70,29 +66,31 @@
         <externalId>false</externalId>
         <inlineHelpText>Choose a value from the drop-down list</inlineHelpText>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Open</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Negotiating</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pending</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Negotiating</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>Invoice</label>
     <listViews>
