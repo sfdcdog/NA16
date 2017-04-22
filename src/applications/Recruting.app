@@ -2,6 +2,7 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <defaultLandingTab>standard-home</defaultLandingTab>
     <description>Manage positions, candidates and job applications, and track job postings on employment websites</description>
+    <formFactors>Large</formFactors>
     <label>Recruting</label>
     <tab>Candidate__c</tab>
     <tab>Review__c</tab>

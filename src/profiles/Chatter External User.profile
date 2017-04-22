@@ -604,6 +604,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TaskAuraController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TestExpenseController</apexClass>
         <enabled>false</enabled>
     </classAccesses>

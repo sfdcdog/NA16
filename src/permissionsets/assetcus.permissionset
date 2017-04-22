@@ -585,6 +585,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TaskAuraController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TestExpenseController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -4205,7 +4209,9 @@
         <field>z_SchemaTemp__c.objname__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
     <label>assetcus</label>
+    <license>Customer Community</license>
     <pageAccesses>
         <apexPage>AWS_Explorer</apexPage>
         <enabled>false</enabled>
@@ -5022,5 +5028,4 @@
         <tab>z_SObjectDescription__c</tab>
         <visibility>None</visibility>
     </tabSettings>
-    <userLicense>Customer Community</userLicense>
 </PermissionSet>

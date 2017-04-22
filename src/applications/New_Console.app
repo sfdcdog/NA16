@@ -9,6 +9,7 @@
     <detailPageRefreshMethod>autoRefresh</detailPageRefreshMethod>
     <enableCustomizeMyTabs>true</enableCustomizeMyTabs>
     <enableKeyboardShortcuts>true</enableKeyboardShortcuts>
+    <enableListViewHover>true</enableListViewHover>
     <enableListViewReskin>true</enableListViewReskin>
     <enableMultiMonitorComponents>true</enableMultiMonitorComponents>
     <enablePinTabs>true</enablePinTabs>
