@@ -308,6 +308,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Demo_PromiseUse</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Demo_PromiseUse_Tests</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DescribeCustomObject</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -333,6 +341,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Example_AngularJSController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Example_Async_Promises</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -509,6 +521,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>ParkServiceMock</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Promise</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -2140,6 +2156,66 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_IPS_BgColor__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_IPS_Case_Comment_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_IPS_Comment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_IPS_IsUpdated__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_IPS_Migrated_Note_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_IPS_NickName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_IPS_Notetype__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_IPS_Public__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_IPS_Rich_Comment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Core_Promote_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Test_for_Rich__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Core_IPS_Case_Comments__c.Test_fro_plain__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Entitlement.AssetId</field>
         <readable>true</readable>
@@ -3561,6 +3637,41 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Tracker__c.Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tracker__c.Components__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tracker__c.Links__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tracker__c.References__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tracker__c.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tracker__c.Tags__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tracker__c.Tools__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Trail__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4334,6 +4445,13 @@
         <layout>ContractLineItem-Contract Line Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Core_IPS_Case_Comments__c-Case RTF Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Core_IPS_Case_Comments__c-Case RTF Layout</layout>
+        <recordType>Core_IPS_Case_Comments__c.Case_comment</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Customer__c-Customer Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4597,6 +4715,9 @@
         <layout>Test_CustMetadata__mdt-Test_CustMetadata Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Tracker__c-Tracker Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Trail__c-Trail Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4837,6 +4958,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>ContractLineItem</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Core_IPS_Case_Comments__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -5314,6 +5444,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Supported_Product__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Tracker__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -5996,6 +6135,11 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Core_IPS_Case_Comments__c.Case_comment</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <default>true</default>
         <recordType>Example_TestObjectfor_ConfigChanges__c.Example_RecordType_1</recordType>
         <visible>true</visible>
@@ -6243,6 +6387,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Supported_Product__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tracker__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

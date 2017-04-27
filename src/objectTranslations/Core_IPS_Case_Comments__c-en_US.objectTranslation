@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case RTF</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case RTFS</value>
+    </caseValues>
+    <fields>
+        <label><!-- Background Color --></label>
+        <name>Core_IPS_BgColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Comment ID --></label>
+        <name>Core_IPS_Case_Comment_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Core_IPS_Case__c</name>
+        <relationshipLabel><!-- Case RTFS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plain Comment --></label>
+        <name>Core_IPS_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsUpdated --></label>
+        <name>Core_IPS_IsUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Migrated Note Type --></label>
+        <name>Core_IPS_Migrated_Note_Type__c</name>
+        <picklistValues>
+            <masterLabel>Comm_Log_Private</masterLabel>
+            <translation><!-- Comm_Log_Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comm_Log_Public</masterLabel>
+            <translation><!-- Comm_Log_Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Env_Detail_Private</masterLabel>
+            <translation><!-- Env_Detail_Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Env_Detail_Public</masterLabel>
+            <translation><!-- Env_Detail_Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner_Category_Info</masterLabel>
+            <translation><!-- Partner_Category_Info --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NickName --></label>
+        <name>Core_IPS_NickName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notetype --></label>
+        <name>Core_IPS_Notetype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make Visible to External Users --></label>
+        <name>Core_IPS_Public__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rich Comment --></label>
+        <name>Core_IPS_Rich_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promote Status --></label>
+        <name>Core_Promote_Status__c</name>
+        <picklistValues>
+            <masterLabel>Done</masterLabel>
+            <translation><!-- Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test for Rich --></label>
+        <name>Test_for_Rich__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test for plain --></label>
+        <name>Test_fro_plain__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Case comment --></label>
+        <name>Case_comment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

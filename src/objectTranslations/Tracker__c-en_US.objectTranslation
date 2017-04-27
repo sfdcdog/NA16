@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tracker</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tracker</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>APEX</masterLabel>
+            <translation><!-- APEX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AWS</masterLabel>
+            <translation><!-- AWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Git</masterLabel>
+            <translation><!-- Git --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heroku</masterLabel>
+            <translation><!-- Heroku --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Javacript</masterLabel>
+            <translation><!-- Javacript --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lightning</masterLabel>
+            <translation><!-- Lightning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration</masterLabel>
+            <translation><!-- Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VisualForce</masterLabel>
+            <translation><!-- VisualForce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>jQuery</masterLabel>
+            <translation><!-- jQuery --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Components --></label>
+        <name>Components__c</name>
+    </fields>
+    <fields>
+        <label><!-- Links --></label>
+        <name>Links__c</name>
+    </fields>
+    <fields>
+        <label><!-- References --></label>
+        <name>References__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEV Completed</masterLabel>
+            <translation><!-- DEV Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEV In progress</masterLabel>
+            <translation><!-- DEV In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migrated to Backup Org</masterLabel>
+            <translation><!-- Migrated to Backup Org --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Researching</masterLabel>
+            <translation><!-- Researching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing in Progress</masterLabel>
+            <translation><!-- Testing in Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Start</masterLabel>
+            <translation><!-- To Start --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uploaded to Repo</masterLabel>
+            <translation><!-- Uploaded to Repo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tags --></label>
+        <name>Tags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tools --></label>
+        <name>Tools__c</name>
+    </fields>
+    <layouts>
+        <layout>Tracker Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
