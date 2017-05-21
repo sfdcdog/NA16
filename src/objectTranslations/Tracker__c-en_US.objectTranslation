@@ -44,6 +44,10 @@
             <translation><!-- Migration --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Testing</masterLabel>
+            <translation><!-- Testing --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>VisualForce</masterLabel>
             <translation><!-- VisualForce --></translation>
         </picklistValues>

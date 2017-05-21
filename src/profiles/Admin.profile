@@ -656,6 +656,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TimeZoneMap</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ToolingAPI</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -6077,6 +6081,14 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>testforemailtemplate</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>testpage1</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>userTimeZone</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>

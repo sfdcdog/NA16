@@ -101,6 +101,10 @@
                     <default>false</default>
                 </value>
                 <value>
+                    <fullName>Testing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
                     <fullName>VisualForce</fullName>
                     <default>false</default>
                 </value>
