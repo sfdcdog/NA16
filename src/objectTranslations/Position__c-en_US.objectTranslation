@@ -33,10 +33,6 @@
         <name>Days_Open__c</name>
     </fields>
     <fields>
-        <label><!-- Educational Requirements --></label>
-        <name>Educational_Requirements__c</name>
-    </fields>
-    <fields>
         <label><!-- Functional Area --></label>
         <name>Functional_Area__c</name>
         <picklistValues>
@@ -280,6 +276,11 @@
             <masterLabel>Part Time</masterLabel>
             <translation><!-- Part Time --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employment Website --></label>
+        <name>dddddd__c</name>
+        <relationshipLabel><!-- Positions --></relationshipLabel>
     </fields>
     <layouts>
         <layout>IT Position Layout</layout>

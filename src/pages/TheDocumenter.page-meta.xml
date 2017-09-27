@@ -6,11 +6,6 @@
     <label>TheDocumenter</label>
     <packageVersions>
         <majorNumber>1</majorNumber>
-        <minorNumber>4</minorNumber>
-        <namespace>arxxustoggle</namespace>
-    </packageVersions>
-    <packageVersions>
-        <majorNumber>1</majorNumber>
         <minorNumber>10</minorNumber>
         <namespace>sf_chttr_apps</namespace>
     </packageVersions>

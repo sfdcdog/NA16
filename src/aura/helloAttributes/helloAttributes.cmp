@@ -1,0 +1,5 @@
+<!--c:helloAttributes-->
+<aura:component implements="force:appHostable" >
+	<aura:attribute name="PirateKing" type="String" default="Gol D Roger"/>
+	Hello {!v.PirateKing} !	
+</aura:component>

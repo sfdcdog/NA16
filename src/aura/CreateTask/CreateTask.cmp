@@ -1,0 +1,26 @@
+<aura:component controller="TaskAuraController">
+	<aura:attribute name="task" type="Task" default="{'sobject' : 'Task'}" />
+	<div class="card">
+		<div class="card-heading context-task">
+			Enter task Information
+		</div>
+		<div class="card-detail">
+			<ui:inputText class="form-control" aura:id="subject" label="subject" value="{!v.task.Subject}" required="true" />
+			<ui:inputSelect aura:id="priority" class="form-control" label="Priority" value="{!v.task.Priority}" multiple="false">
+				<ui:inputSelectOption text="High" label="High" value="true"/>
+				<ui:inputSelectOption text="Normal" label="Normal" />
+				<ui:inputSelectOption text="Low" label="Low" />
+			</ui:inputSelect>
+			<ui:inputSelect aura:id="type" class="form-control" label="Type" value="{!v.task.Type}" multiple="false">
+				<ui:inputSelectOption text="Call" label="Call" value="true"/>
+				<ui:inputSelectOption text="Meeting" label="Meeting" />
+				<ui:inputSelectOption text="Other" label="Other" />
+				<ui:inputSelectOption text="Email" label="Email" />
+			</ui:inputSelect>
+			<ui:inputTextArea class="form-control" aura:id="description" label="Description" value="{!v.task.Description}" rows="5"/>		
+			<div style="margin-top: 10px">
+				<ui:button aura:id="addBtn" label="" labelClass="glyphicon glyphicon-plus" class="btn btn-success" press="{!c.save}" />
+			</div>
+		</div>
+	</div> 	
+</aura:component>

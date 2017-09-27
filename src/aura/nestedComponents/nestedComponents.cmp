@@ -1,0 +1,8 @@
+<!--c:nestedComponents-->
+<aura:component implements="force:appHostable">
+	Observe! Components within Components!!
+	<c:Example_LtngApp1_comp />
+
+	<c:helloAttributes PirateKing="Gol D Roger" />
+	
+</aura:component>

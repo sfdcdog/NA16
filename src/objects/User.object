@@ -60,15 +60,6 @@
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Assignment_Group_Active__c</fullName>
-        <defaultValue>true</defaultValue>
-        <externalId>false</externalId>
-        <inlineHelpText>Can this user be assigned records in the Assignment Group process.  Uncheck to mark this use as inactive on all assignment groups</inlineHelpText>
-        <label>Assignment Group Active</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>ManagerId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <type>Hierarchy</type>

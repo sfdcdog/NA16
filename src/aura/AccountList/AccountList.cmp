@@ -1,0 +1,21 @@
+<aura:component controller="AccountListAuraController">
+	<aura:attribute name="accounts" type="Account[]"/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<div class="card-list context-account">
+		<div class="card-list-heading">
+			<h3>Organizations</h3>
+		</div>
+		<aura:iteration items="{!v.accounts}" var="acc">
+			<a href="#" class="card">
+				<div class="card-heading">
+					<ui:outputText value="{!acc.Name}" />
+				</div>
+				<ul class="card-detail">
+					<li>
+						<ui:outputText value="{!acc.Description}" />	
+					</li>
+				</ul>
+			</a>
+		</aura:iteration>
+	</div>
+</aura:component>

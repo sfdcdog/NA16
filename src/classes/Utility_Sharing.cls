@@ -95,8 +95,8 @@ public class Utility_Sharing{
                     }
                 }
             }catch(Exception e){
-                SI_Exception_Class.InsertException('NA','Utility_Sharing','NA', 'provideAccess',e);
-                System.debug('@@@ Exception ### - '+e.getMessage());
+                /*SI_Exception_Class.InsertException('NA','Utility_Sharing','NA', 'provideAccess',e);
+                System.debug('@@@ Exception ### - '+e.getMessage());*/
             }
         }
     }
@@ -177,8 +177,8 @@ public class Utility_Sharing{
                     }
                 }
             }catch(Exception e){
-                SI_Exception_Class.InsertException('NA','Utility_Sharing','NA', 'provideAccess',e);
-                System.debug('@@@ Exception ### - '+e.getMessage());
+                /*SI_Exception_Class.InsertException('NA','Utility_Sharing','NA', 'provideAccess',e);
+                System.debug('@@@ Exception ### - '+e.getMessage());*/
             }
         }
     }
@@ -270,8 +270,8 @@ public class Utility_Sharing{
                     }
                 }
             }catch(Exception e){
-                SI_Exception_Class.InsertException('NA','Utility_Sharing','NA', 'provideAccess',e);
-                System.debug('@@@ Exception ### - '+e.getMessage());
+                /*SI_Exception_Class.InsertException('NA','Utility_Sharing','NA', 'provideAccess',e);
+                System.debug('@@@ Exception ### - '+e.getMessage());*/
             }
         }
     }
@@ -353,8 +353,8 @@ public class Utility_Sharing{
                     }
                 }
             }catch(Exception e){
-                SI_Exception_Class.InsertException('NA','Utility_Sharing','NA', 'provideAccess',e);
-                System.debug('@@@ Exception ### - '+e.getMessage());
+                /*SI_Exception_Class.InsertException('NA','Utility_Sharing','NA', 'provideAccess',e);
+                System.debug('@@@ Exception ### - '+e.getMessage());*/
             }
         }
     }

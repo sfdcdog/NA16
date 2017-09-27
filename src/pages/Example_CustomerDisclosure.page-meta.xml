@@ -11,16 +11,6 @@
     </packageVersions>
     <packageVersions>
         <majorNumber>1</majorNumber>
-        <minorNumber>6</minorNumber>
-        <namespace>RKExportToExcel</namespace>
-    </packageVersions>
-    <packageVersions>
-        <majorNumber>1</majorNumber>
-        <minorNumber>4</minorNumber>
-        <namespace>arxxustoggle</namespace>
-    </packageVersions>
-    <packageVersions>
-        <majorNumber>1</majorNumber>
         <minorNumber>8</minorNumber>
         <namespace>sf_chttr_apps</namespace>
     </packageVersions>

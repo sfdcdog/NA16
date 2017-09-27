@@ -30,7 +30,7 @@
         <enableClickjackSetup>true</enableClickjackSetup>
         <enablePostForSessions>false</enablePostForSessions>
         <enableSMSIdentity>true</enableSMSIdentity>
-        <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
+        <enforceIpRangesEveryRequest>true</enforceIpRangesEveryRequest>
         <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>
         <forceRelogin>true</forceRelogin>
         <lockSessionsToDomain>false</lockSessionsToDomain>

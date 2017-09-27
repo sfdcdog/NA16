@@ -1,0 +1,25 @@
+<aura:component implements="force:appHostable" >
+	<!--Rich text demo-->
+    <style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+    <div>
+        <ui:inputRichText aura:id="inputRT" label="Rich Text Demo"
+        cols="50" rows="5" value=" "/>
+        <ui:button aura:id="outputButton"
+        buttonTitle="Click to see what you put into the rich text field"
+        label="Display" press="{!c.getInput}"/>
+	</div>
+    <br/><br/>
+    <div>
+        <table>
+            <tr>
+                <td>
+                	<ui:outputRichText aura:id="outputRT" value=" "/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</aura:component>

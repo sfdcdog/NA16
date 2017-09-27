@@ -61,6 +61,10 @@
                 <behavior>Edit</behavior>
                 <field>Hiring_Manager__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>dddddd__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -131,10 +135,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Skills_Required__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Educational_Requirements__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
