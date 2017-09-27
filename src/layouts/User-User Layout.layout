@@ -10,10 +10,6 @@
                 <behavior>Edit</behavior>
                 <field>custom_links_for_email__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Assignment_Group_Active__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>

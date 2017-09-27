@@ -928,43 +928,6 @@
         <label><!-- Summary Function (SUM) --></label>
         <name>skuid__summary_sum</name>
     </customLabels>
-    <customLabels>
-        <label>設定取得</label>
-        <name>z_DumpBtn</name>
-    </customLabels>
-    <customLabels>
-        <label>エラーが発生いたしました。</label>
-        <name>z_FAILURE</name>
-    </customLabels>
-    <customLabels>
-        <label>設定情報を取得するにはディスク容量が必要となります。特にDeveloper Editionをお使いの方はすべての設定情報を取得することができませんので設定タブからターゲットを絞ってください。デフォルトの組織オブジェクト情報を取得するのに4.5MB必要となります</label>
-        <name>z_Message1</name>
-    </customLabels>
-    <customLabels>
-        <label>このアプリケーションはオブジェクトの設定情報を上書きいたします。前回取得したレコードを保存したい場合にはレポート機能でcsvあるいはxslファイルとして出力してください。また分析スナップショット機能を使い別オブジェクトに出力することも可能です</label>
-        <name>z_Message2</name>
-    </customLabels>
-    <customLabels>
-        <label>設定取得が終わるまでこのページを閉じず約10分程度お待ちください。またボタンの2度押しは行わないでください。</label>
-        <name>z_Message3</name>
-    </customLabels>
-    <customLabels>
-        <label>オブジェクト設定取得画面</label>
-        <name>z_MetadataDump</name>
-    </customLabels>
-    <customLabels>
-        <label>進行状況</label>
-        <name>z_Progress</name>
-    </customLabels>
-    <customLabels>
-        <label>オブジェクトの設定情報が作成されました。
-SObjectタブをクリックしてご確認ください。</label>
-        <name>z_SUCCESS</name>
-    </customLabels>
-    <customLabels>
-        <label>設定タブからターゲットとなるオブジェクトを選んでください。</label>
-        <name>z_Warning</name>
-    </customLabels>
     <customTabs>
         <label><!-- AWS Explorer --></label>
         <name>AWS_Explorer</name>
@@ -998,14 +961,6 @@ SObjectタブをクリックしてご確認ください。</label>
         <name>Example_LtngNestedComponents</name>
     </customTabs>
     <customTabs>
-        <label><!-- Getting Started --></label>
-        <name>Getting_Started</name>
-    </customTabs>
-    <customTabs>
-        <label><!-- Graphics Pack Overview --></label>
-        <name>Graphics_Pack_Overview</name>
-    </customTabs>
-    <customTabs>
         <label><!-- Lightning Rich Text --></label>
         <name>Lightning_Rich_Text</name>
     </customTabs>
@@ -1016,10 +971,6 @@ SObjectタブをクリックしてご確認ください。</label>
     <customTabs>
         <label><!-- S3 Samples --></label>
         <name>S3_Samples</name>
-    </customTabs>
-    <customTabs>
-        <label>スキーマ取得</label>
-        <name>SnapShot</name>
     </customTabs>
     <customTabs>
         <label><!-- check contacts --></label>

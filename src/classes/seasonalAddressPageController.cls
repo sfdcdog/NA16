@@ -1,63 +1,21 @@
 public with sharing class seasonalAddressPageController {
 
-    public Boolean showHouseHoldFlag {
-        get;
-        set;
-    }
-    public Boolean showContactFlag {
-        get;
-        set;
-    }
+    public Boolean showHouseHoldFlag {get;set;}
+    public Boolean showContactFlag {get;set;}
     public String searchTxt;
     public String hHoldListQuery;
-    public List < wrapHouseHold > wrapHouseHoldList {
-        get;
-        set;
-    }
-    public List < wrapContact > wrapContactList {
-        get;
-        set;
-    }
-    public Integer hHoldRecords {
-        get;
-        set;
-    }
-    public Integer conRecords {
-        get;
-        set;
-    }
-    public Integer size {
-        get;
-        set;
-    }
-    public transient String searchText {
-        get;
-        set;
-    }
-    public Set < Household__c > selectedHouseHolds {
-        get;
-        set;
-    }
-    public Set < Contact > selectedContacts {
-        get;
-        set;
-    }
-    public List < SelectOption > hHoldPaginationSizeOptions {
-        get;
-        set;
-    }
-    public List < SelectOption > conPaginationSizeOptions {
-        get;
-        set;
-    }
-    public String searchTextcon {
-        get;
-        set;
-    }
-    public String conListQuery {
-        get;
-        set;
-    }
+    public List < wrapHouseHold > wrapHouseHoldList {get;set;}
+    public List < wrapContact > wrapContactList {get;set;}
+    public Integer hHoldRecords {get;set;}
+    public Integer conRecords {get;set;}
+    public Integer size {get;set;}
+    public transient String searchText {get;set;}
+    public Set < Household__c > selectedHouseHolds {get;set;}
+    public Set < Contact > selectedContacts {get;set;}
+    public List < SelectOption > hHoldPaginationSizeOptions {get;set;}
+    public List < SelectOption > conPaginationSizeOptions {get;set;}
+    public String searchTextcon {get;set;}
+    public String conListQuery {get;set;}
     public List < Contact > conQueryList;
     public String hHoldId = '';
 
@@ -251,25 +209,13 @@ public with sharing class seasonalAddressPageController {
     }
 
     public class wrapHouseHold {
-        public Household__c hHold {
-            get;
-            set;
-        }
-        public Boolean selected {
-            get;
-            set;
-        }
+        public Household__c hHold {get;set;}
+        public Boolean selected {get;set;}
     }
 
     public class wrapContact {
-        public boolean selected {
-            get;
-            set;
-        }
-        public Contact con {
-            set;
-            get;
-        }
+        public boolean selected {get;set;}
+        public Contact con {set;get;}
     }
 
 }

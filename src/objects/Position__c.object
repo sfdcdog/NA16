@@ -127,17 +127,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Educational_Requirements__c</fullName>
-        <externalId>false</externalId>
-        <label>Educational Requirements</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
         <fullName>Functional_Area__c</fullName>
         <externalId>false</externalId>
         <label>Functional Area</label>
@@ -611,6 +600,20 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>dddddd__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Employment Website</label>
+        <referenceTo>Employment_Website__c</referenceTo>
+        <relationshipLabel>Positions</relationshipLabel>
+        <relationshipName>Positions</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <label>Position</label>
     <listViews>

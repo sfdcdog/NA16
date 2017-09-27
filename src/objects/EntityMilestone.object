@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>BusinessHoursId</fullName>
@@ -7,6 +28,7 @@
     </fields>
     <fields>
         <fullName>CompletionDate</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ElapsedTimeInDays</fullName>
@@ -16,6 +38,7 @@
     </fields>
     <fields>
         <fullName>ElapsedTimeInMins</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>IsCompleted</fullName>
@@ -25,10 +48,12 @@
     </fields>
     <fields>
         <fullName>MilestoneId</fullName>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ParentEntityId</fullName>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -37,9 +62,11 @@
     </fields>
     <fields>
         <fullName>StartDate</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>TargetDate</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>TargetResponseInDays</fullName>
@@ -49,6 +76,7 @@
     </fields>
     <fields>
         <fullName>TargetResponseInMins</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>TimeRemainingInDays</fullName>

@@ -38,36 +38,6 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <fieldSets>
-        <fullName>RKExportToExcel__Export_To_Excel</fullName>
-        <description>This Field Set is used to specify the fields in the Export To Excel button on the Product List Views</description>
-        <displayedFields>
-            <field>Name</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Description</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>ProductCode</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Family</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>IsActive</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <label>Export To Excel</label>
-    </fieldSets>
     <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
@@ -129,16 +99,4 @@
         <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
     </searchLayouts>
-    <webLinks>
-        <fullName>RKExportToExcel__Export_To_Excel</fullName>
-        <availability>online</availability>
-        <description>Export selected records from a Product list view to an Excel spreadsheet</description>
-        <displayType>massActionButton</displayType>
-        <linkType>page</linkType>
-        <masterLabel>Export To Excel</masterLabel>
-        <openType>replace</openType>
-        <page>RKExportToExcel__ExportProductsToExcel</page>
-        <protected>false</protected>
-        <requireRowSelection>true</requireRowSelection>
-    </webLinks>
 </CustomObject>

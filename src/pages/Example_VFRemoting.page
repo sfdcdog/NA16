@@ -54,9 +54,48 @@
     
     
     </script>
+    <script type="text/javascript">
+        function sendAJAX(){
+        //var $j = jQuery.noConflict();
+        var sessionId = '{!$Api.Session_ID}';
+         $.ajax({
+                type: "PUT",
+                url: "/services/apexrest/Accounts/001j000000xsPTl/Update",
+                headers: {"Authorization" : "OAuth " + sessionId},
+                crossDomain : true,
+                dataType: 'json',
+                success: function (responseData, status, xhr) {
+                    console.log(responseData);
+                },
+                error: function (request, status, error) {
+                    console.log(request.responseText);
+                }
+            });
+        }
+    </script>
+<!--     <script type="text/javascript">
+       var result = sforce.connection.login("myname@mymail.com", "mypassword+mysecurityToken");
+    sforce.connection.init('{!sessionId}', 'REST web service url'); // here pass current session id of the org from which you are making request.
+
+    sforce.connection.remoteFunction({
+           url : REST web service url,
+           requestHeaders: {"Authorization":"Bearer "+result.sessionId, "Content-Type":"application/json"}, // here pass the session id of the org in which you have your REST service
+           requestData: data to post in JSON format,
+           method: "POST",
+           onSuccess : function(response) {
+                  console.log(response);
+              },
+           onFailure : function(response) {
+                  alert("Failed" + response)
+              }
+       });
+        
+
+    </script> -->
     <apex:form >
         <apex:outputPanel >
             <apex:pageBlock >
+                 <apex:commandButton value="Click Me!!!" onclick="sendAJAX()" onComplete="return null;"/>
                 <apex:pageBlockSection columns="1">                  
                     <apex:pageBlockTable styleClass="tblClass1" value="{!accList}" var="acc">
                     </apex:pageBlockTable>
